@@ -1,0 +1,724 @@
+,propertyid,location,bedroom,bathroom,area ( Sq. Yd.),price,Flat,House,Lower Portion,Room,Upper Portion,For Purchase,For Rent,For Sale,address
+0,17106827,"Frere Town, Karachi, Sindh",3,4,222,110000,True,False,False,False,False,False,True,False,224
+1,19843520,"Civil Lines, Karachi, Sindh",2,2,167,75000,True,False,False,False,False,False,True,False,158
+2,20039912,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,7,467,225000,True,False,False,False,False,False,True,False,308
+3,20410232,"Navy Housing Scheme Zamzama, Zamzama, Karachi, Sindh",4,4,350,500000,False,True,False,False,False,False,True,False,309
+4,20483503,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,5,350,260000,False,True,False,False,False,False,True,False,308
+5,20483534,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,5,350,255000,False,True,False,False,False,False,True,False,308
+6,21441862,"Tricon Tower, Bath Island, Karachi, Sindh",3,4,256,150000,True,False,False,False,False,False,True,False,387
+7,21551880,"Bath Island, Karachi, Sindh",4,5,300,160000,True,False,False,False,False,False,True,False,134
+8,21586854,"Clifton, Karachi, Sindh",4,5,300,200000,True,False,False,False,False,False,True,False,168
+9,23119126,"Clifton - Block 2, Clifton, Karachi, Sindh",3,4,256,150000,True,False,False,False,False,False,True,False,160
+10,23687145,"Clifton - Block 4, Clifton, Karachi, Sindh",5,5,330,350000,False,True,False,False,False,False,True,False,162
+11,24749065,"Clifton, Karachi, Sindh",4,5,289,185000,True,False,False,False,False,False,True,False,168
+12,25250854,"Tricon Tower, Bath Island, Karachi, Sindh",3,4,244,150000,True,False,False,False,False,False,True,False,387
+13,26021470,"Clifton, Karachi, Sindh",4,4,278,160000,True,False,False,False,False,False,True,False,168
+14,28668627,"KN Gohar Green City, Shahra-e-Faisal, Karachi, Sindh",3,3,120,47000,False,True,False,False,False,False,True,False,286
+15,29210681,"Falcon Complex New Malir, Malir, Karachi, Sindh",4,5,350,140000,False,True,False,False,False,False,True,False,208
+16,30657070,"Clifton, Karachi, Sindh",4,5,400,220000,True,False,False,False,False,False,True,False,168
+17,31239384,"Gohar Green City, Karachi, Sindh",2,2,120,35000,False,True,False,False,False,False,True,False,234
+18,31450255,"Khaliq-uz-Zaman Road, Karachi, Sindh",3,3,244,125000,True,False,False,False,False,False,True,False,288
+19,34013868,"Old Clifton, Karachi, Sindh",3,5,311,270000,True,False,False,False,False,False,True,False,326
+20,34074312,"Saima Presidency, Malir Cantonment, Cantt, Karachi, Sindh",3,3,178,62000,True,False,False,False,False,False,True,False,365
+21,35781536,"Clifton, Karachi, Sindh",3,4,222,130000,True,False,False,False,False,False,True,False,168
+22,37196582,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,5,375,150000,False,True,False,False,False,False,True,False,112
+23,37851829,"Navy Housing Scheme Zamzama, Zamzama, Karachi, Sindh",5,5,1600,1500000,False,True,False,False,False,False,True,False,309
+24,38509624,"Emaar Pearl Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",4,4,407,300000,True,False,False,False,False,False,True,False,206
+25,38807290,"Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,3,178,150000,True,False,False,False,False,False,True,False,204
+26,39533367,"Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",4,6,328,338000,True,False,False,False,False,False,True,False,204
+27,39808125,"Emaar Pearl Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,356,190000,True,False,False,False,False,False,True,False,206
+28,39867407,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,3,133,110000,True,False,False,False,False,False,True,False,185
+29,39898377,"Creek Vista, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,411,225000,True,False,False,False,False,False,True,False,174
+30,39943816,"DHA Phase 6, DHA Defence, Karachi, Sindh",4,4,500,140000,False,False,False,False,True,False,True,False,181
+31,40078858,"Lakhani Fantasia, Scheme 33, Karachi, Sindh",1,1,50,18000,True,False,False,False,False,False,True,False,291
+32,40108425,"Clifton - Block 2, Clifton, Karachi, Sindh",3,3,161,90000,True,False,False,False,False,False,True,False,160
+33,40227374,"Falcon Complex New Malir, Malir, Karachi, Sindh",2,3,500,160000,False,True,False,False,False,False,True,False,208
+34,40482491,"DHA Phase 7, DHA Defence, Karachi, Sindh",4,4,600,150000,False,False,False,False,True,False,True,False,183
+35,40574548,"DHA Phase 7, DHA Defence, Karachi, Sindh",3,3,500,130000,False,False,False,False,True,False,True,False,183
+36,40574559,"DHA Phase 7, DHA Defence, Karachi, Sindh",3,3,500,140000,False,False,False,False,True,False,True,False,183
+37,40696843,"Clifton - Block 7, Clifton, Karachi, Sindh",4,4,311,160000,True,False,False,False,False,False,True,False,165
+38,40827685,"North Nazimabad - Block J, North Nazimabad, Karachi, Sindh",2,2,89,9000000,True,False,False,False,False,True,False,False,323
+39,40877287,"Falcon Complex New Malir, Malir, Karachi, Sindh",5,5,500,168000,False,True,False,False,False,False,True,False,208
+40,40905247,"Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,4,272,190000,True,False,False,False,False,False,True,False,204
+41,40931409,"DHA Phase 5, DHA Defence, Karachi, Sindh",6,7,666,500000,False,True,False,False,False,False,True,False,180
+42,41219853,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,5,511,195000,True,False,False,False,False,False,True,False,308
+43,41233310,"Gulistan-e-Jauhar - Block 5, Gulistan-e-Jauhar, Karachi, Sindh",2,2,106,32000,True,False,False,False,False,False,True,False,243
+44,41240217,"Gulistan-e-Jauhar - Block 16, Gulistan-e-Jauhar, Karachi, Sindh",3,3,178,46000,True,False,False,False,False,False,True,False,242
+45,41443902,"Clifton, Karachi, Sindh",3,4,222,150000,True,False,False,False,False,False,True,False,168
+46,41523408,"DHA Phase 5, DHA Defence, Karachi, Sindh",2,2,100,45000,True,False,False,False,False,False,True,False,180
+47,41524620,"Clifton - Block 9, Clifton, Karachi, Sindh",3,3,222,175000,True,False,False,False,False,False,True,False,167
+48,41551313,"KDA Officers Society, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,240,140000,False,False,False,False,True,False,True,False,284
+49,41617468,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,400,80000,False,False,True,False,False,False,True,False,257
+50,41624105,"Clifton - Block 2, Clifton, Karachi, Sindh",3,3,178,100000,True,False,False,False,False,False,True,False,160
+51,41624136,"DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,117,45000,True,False,False,False,False,False,True,False,181
+52,41624224,"Gulshan-e-Iqbal Town, Karachi, Sindh",1,1,44,20000,False,False,False,True,False,False,True,False,259
+53,41651414,"DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,111,60000,True,False,False,False,False,False,True,False,181
+54,41887649,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,6,500,300000,False,True,False,False,False,False,True,False,181
+55,41996474,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,120,45000,False,False,True,False,False,False,True,False,257
+56,42110357,"Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,3,286,85000,True,False,False,False,False,False,True,False,113
+57,42140507,"Hill Park, Karachi, Sindh",3,0,161,95000,True,False,False,False,False,False,True,False,266
+58,42229910,"Gulshan-e-Iqbal - Block 11, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",4,4,240,60000,False,False,False,False,True,False,True,False,248
+59,42302888,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,5,400,225000,True,False,False,False,False,False,True,False,308
+60,42357481,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,160000,False,False,True,False,False,False,True,False,185
+61,42427496,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,5,350,250000,False,True,False,False,False,False,True,False,308
+62,42512092,"Gulshan-e-Iqbal - Block 3, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,78,30000,True,False,False,False,False,False,True,False,253
+63,42548024,"Falcon Complex New Malir, Malir, Karachi, Sindh",5,5,500,165000,False,True,False,False,False,False,True,False,208
+64,42548029,"Falcon Complex New Malir, Malir, Karachi, Sindh",5,5,500,175000,False,True,False,False,False,False,True,False,208
+65,42571053,"PECHS, Jamshed Town, Karachi, Sindh",0,0,275,310000,False,True,False,False,False,False,True,False,329
+66,42603260,"DHA Phase 8, DHA Defence, Karachi, Sindh",6,6,1000,900000,False,True,False,False,False,False,True,False,185
+67,42604606,"Lakhani Presidency, Rashid Minhas Road, Karachi, Sindh",4,5,222,110000,True,False,False,False,False,False,True,False,292
+68,42700734,"DOHS Phase 1, Malir Cantonment, Cantt, Karachi, Sindh",3,3,550,125000,False,False,False,False,True,False,True,False,186
+69,42700836,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,3,300,90000,True,False,False,False,False,False,True,False,112
+70,42700837,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",4,4,367,100000,True,False,False,False,False,False,True,False,112
+71,42720109,"Clifton - Block 5, Clifton, Karachi, Sindh",4,4,250,190000,False,True,False,False,False,False,True,False,163
+72,42764667,"DHA Phase 6, DHA Defence, Karachi, Sindh",4,5,666,140000,False,False,False,False,True,False,True,False,181
+73,42795894,"DHA Phase 2, DHA Defence, Karachi, Sindh",4,5,1000,400000,False,True,False,False,False,False,True,False,178
+74,42889100,"Gulshan-e-Iqbal - Block 7, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,250,72000,False,False,False,False,True,False,True,False,258
+75,42955047,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,3,300,85000,True,False,False,False,False,False,True,False,112
+76,43067096,"Emaar Pearl Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,5,272,175000,True,False,False,False,False,False,True,False,206
+77,43166936,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,120,70000,False,False,False,False,True,False,True,False,257
+78,43186145,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,100,180000,False,True,False,False,False,False,True,False,185
+79,43227738,"Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,3,285,85000,True,False,False,False,False,False,True,False,113
+80,43238309,"Gulshan-e-Iqbal - Block 1, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,156,64000,True,False,False,False,False,False,True,False,246
+81,43248540,"DHA Phase 7, DHA Defence, Karachi, Sindh",3,3,500,140000,False,False,False,False,True,False,True,False,183
+82,43249334,"Emaar Reef Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,3,182,175000,True,False,False,False,False,False,True,False,207
+83,43281296,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",4,4,400,95000,False,False,False,False,True,False,True,False,257
+84,43324159,"DHA Phase 5, DHA Defence, Karachi, Sindh",5,6,1000,600000,False,True,False,False,False,False,True,False,180
+85,43325059,"Bukhari Commercial Area, DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,111,55000,True,False,False,False,False,False,True,False,149
+86,43381161,"Gulshan-e-Maymar, Gadap Town, Karachi, Sindh",2,3,120,23000,False,False,False,False,True,False,True,False,265
+87,43412998,"Gulistan-e-Jauhar - Block 14, Gulistan-e-Jauhar, Karachi, Sindh",3,3,450,75000,False,False,False,False,True,False,True,False,241
+88,43479993,"Shaheed Millat Road, Karachi, Sindh",4,4,267,185000,True,False,False,False,False,False,True,False,370
+89,43488643,"DHA Phase 2, DHA Defence, Karachi, Sindh",4,5,500,210000,False,True,False,False,False,False,True,False,178
+90,43489686,"Lakhani Fantasia, Scheme 33, Karachi, Sindh",2,2,83,22000,True,False,False,False,False,False,True,False,291
+91,43511657,"Bukhari Commercial Area, DHA Phase 6, DHA Defence, Karachi, Sindh",3,3,144,90000,True,False,False,False,False,False,True,False,149
+92,43548835,"Saadi Town, Scheme 33, Karachi, Sindh",2,3,120,22000,False,False,True,False,False,False,True,False,359
+93,43548839,"Saadi Town, Scheme 33, Karachi, Sindh",3,4,400,70000,False,True,False,False,False,False,True,False,359
+94,43553870,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,4,289,80000,True,False,False,False,False,False,True,False,112
+95,43553872,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,4,289,80000,True,False,False,False,False,False,True,False,112
+96,43555155,"Clifton - Block 6, Clifton, Karachi, Sindh",3,4,311,210000,True,False,False,False,False,False,True,False,164
+97,43591315,"Gulshan-e-Iqbal - Block 13/A, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,189,58000,False,False,True,False,False,False,True,False,249
+98,43603689,"DHA Phase 7, DHA Defence, Karachi, Sindh",3,3,100,120000,False,True,False,False,False,False,True,False,183
+99,43627905,"Lakhani Fantasia, Scheme 33, Karachi, Sindh",2,2,117,27000,True,False,False,False,False,False,True,False,291
+100,43632465,"Gulshan-e-Iqbal - Block 13/D-2, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,189,55000,False,False,False,False,True,False,True,False,251
+101,43635305,"Bahria Town - Precinct 19, Bahria Town Karachi, Karachi, Sindh",2,2,106,25000,True,False,False,False,False,False,True,False,128
+102,43637681,"DHA Phase 7, DHA Defence, Karachi, Sindh",6,6,500,400000,False,True,False,False,False,False,True,False,183
+103,43650575,"Gulshan-e-Iqbal - Block 13/D-2, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,189,55000,True,False,False,False,False,False,True,False,251
+104,43659414,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,6,1000,600000,False,True,False,False,False,False,True,False,181
+105,43659887,"Clifton, Karachi, Sindh",3,4,222,150000,True,False,False,False,False,False,True,False,168
+106,43665147,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,6,350,250000,False,True,False,False,False,False,True,False,308
+107,43683346,"Emaar Reef Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,5,272,190000,True,False,False,False,False,False,True,False,207
+108,43697809,"Clifton - Block 4, Clifton, Karachi, Sindh",3,3,200,140000,False,False,False,False,True,False,True,False,162
+109,43702472,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,160000,False,False,False,False,True,False,True,False,185
+110,43726708,"Clifton, Karachi, Sindh",3,3,133,160000,True,False,False,False,False,False,True,False,168
+111,43726886,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,6,375,145000,False,True,False,False,False,False,True,False,112
+112,43726960,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,6,375,145000,False,True,False,False,False,False,True,False,112
+113,43739997,"DHA Phase 8, DHA Defence, Karachi, Sindh",4,5,120,135000,False,True,False,False,False,False,True,False,185
+114,43775834,"DHA Phase 6, DHA Defence, Karachi, Sindh",3,4,500,135000,False,False,False,False,True,False,True,False,181
+115,43783392,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,5,350,260000,False,True,False,False,False,False,True,False,308
+116,43787564,"DHA Phase 6, DHA Defence, Karachi, Sindh",6,6,1000,900000,False,True,False,False,False,False,True,False,181
+117,43789706,"Gulshan-e-Iqbal - Block 13/A, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,3,100,35000,True,False,False,False,False,False,True,False,249
+118,43820726,"Clifton, Karachi, Sindh",3,5,256,150000,True,False,False,False,False,False,True,False,168
+119,43824510,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,3,500,150000,False,False,True,False,False,False,True,False,185
+120,43824609,"DHA Phase 4, DHA Defence, Karachi, Sindh",3,3,500,135000,False,False,False,False,True,False,True,False,179
+121,43835391,"Gulistan-e-Jauhar, Karachi, Sindh",3,3,170,50000,False,False,False,False,True,False,True,False,245
+122,43844415,"Creek Vista, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,356,200000,True,False,False,False,False,False,True,False,174
+123,43846378,"Falcon Complex New Malir, Malir, Karachi, Sindh",5,5,500,175000,False,True,False,False,False,False,True,False,208
+124,43864952,"Clifton - Block 8, Clifton, Karachi, Sindh",4,4,222,130000,True,False,False,False,False,False,True,False,166
+125,43879460,"Falcon Complex New Malir, Malir, Karachi, Sindh",4,5,350,140000,False,True,False,False,False,False,True,False,208
+126,43889612,"Gulshan-e-Iqbal - Block 4, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,94,35000,True,False,False,False,False,False,True,False,254
+127,43890190,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,400,40000,False,False,False,False,True,False,True,False,257
+128,43907972,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,120,45000,False,False,False,False,True,False,True,False,257
+129,43912783,"DHA Phase 7, DHA Defence, Karachi, Sindh",5,5,500,220000,False,True,False,False,False,False,True,False,183
+130,43913412,"DHA Phase 5, DHA Defence, Karachi, Sindh",5,6,500,225000,False,True,False,False,False,False,True,False,180
+131,43919541,"PECHS Block 2, PECHS, Jamshed Town, Karachi, Sindh",10,5,1000,1000000,False,True,False,False,False,False,True,False,328
+132,43931793,"Saima Elite Villas, Malir, Karachi, Sindh",3,3,120,50000,False,True,False,False,False,False,True,False,363
+133,43964010,"Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,3,120,30000,False,False,False,False,True,False,True,False,260
+134,43974990,"DHA Phase 7 Extension, DHA Defence, Karachi, Sindh",4,4,100,100000,False,True,False,False,False,False,True,False,182
+135,43976037,"DHA Phase 5, DHA Defence, Karachi, Sindh",6,6,1000,1000000,False,True,False,False,False,False,True,False,180
+136,43979031,"DHA Phase 5, DHA Defence, Karachi, Sindh",4,4,500,250000,False,True,False,False,False,False,True,False,180
+137,43980175,"Gulshan-e-Iqbal - Block 3, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,156,70000,True,False,False,False,False,False,True,False,253
+138,43999011,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,6,500,600000,False,True,False,False,False,False,True,False,181
+139,43999079,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,170000,False,False,False,False,True,False,True,False,185
+140,44001408,"Gulshan-e-Maymar - Sector S, Gulshan-e-Maymar, Gadap Town, Karachi, Sindh",3,3,600,75000,False,False,False,False,True,False,True,False,264
+141,44013400,"DHA Phase 4, DHA Defence, Karachi, Sindh",4,5,300,250000,False,True,False,False,False,False,True,False,179
+142,44017587,"University Road, Karachi, Sindh",3,3,200,45000,True,False,False,False,False,False,True,False,391
+143,44027664,"PECHS Block 2, PECHS, Jamshed Town, Karachi, Sindh",4,4,250,175000,False,False,True,False,False,False,True,False,328
+144,44047774,"Clifton - Block 4, Clifton, Karachi, Sindh",2,2,129,150000,True,False,False,False,False,False,True,False,162
+145,44064936,"Clifton - Block 8, Clifton, Karachi, Sindh",3,3,200,140000,True,False,False,False,False,False,True,False,166
+146,44100519,"DHA Phase 8, DHA Defence, Karachi, Sindh",6,6,1000,700000,False,True,False,False,False,False,True,False,185
+147,44110886,"DHA Phase 4, DHA Defence, Karachi, Sindh",4,5,300,200000,False,True,False,False,False,False,True,False,179
+148,44111236,"Clifton - Block 4, Clifton, Karachi, Sindh",2,2,128,100000,True,False,False,False,False,False,True,False,162
+149,44120614,"Saima Jinnah Avenue, Malir, Karachi, Sindh",3,4,244,76000,True,False,False,False,False,False,True,False,364
+150,44136714,"Defence View Society, Karachi, Sindh",3,4,189,75000,True,False,False,False,False,False,True,False,198
+151,44138468,"Bath Island, Karachi, Sindh",4,4,278,195000,True,False,False,False,False,False,True,False,134
+152,44146174,"Tariq Road, Karachi, Sindh",2,3,139,90000,True,False,False,False,False,False,True,False,381
+153,44162851,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,160000,False,False,True,False,False,False,True,False,185
+154,44169981,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,3,306,80000,True,False,False,False,False,False,True,False,112
+155,44170062,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,5,375,140000,False,True,False,False,False,False,True,False,112
+156,44170065,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,5,375,140000,False,True,False,False,False,False,True,False,112
+157,44170072,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,5,375,145000,False,True,False,False,False,False,True,False,112
+158,44180969,"Saadi Town, Scheme 33, Karachi, Sindh",3,4,240,40000,False,False,True,False,False,False,True,False,359
+159,44180975,"Saadi Town, Scheme 33, Karachi, Sindh",3,4,400,55000,False,False,True,False,False,False,True,False,359
+160,44188469,"Creek Vista, DHA Phase 8, DHA Defence, Karachi, Sindh",4,4,356,250000,True,False,False,False,False,False,True,False,174
+161,44192279,"Clifton - Block 4, Clifton, Karachi, Sindh",2,2,133,90000,True,False,False,False,False,False,True,False,162
+162,44199152,"DHA Phase 7, DHA Defence, Karachi, Sindh",4,4,250,300000,False,True,False,False,False,False,True,False,183
+163,44200001,"Clifton - Block 4, Clifton, Karachi, Sindh",3,3,167,95000,True,False,False,False,False,False,True,False,162
+164,44200411,"Clifton - Block 4, Clifton, Karachi, Sindh",3,3,167,160000,True,False,False,False,False,False,True,False,162
+165,44201147,"DHA Phase 8, DHA Defence, Karachi, Sindh",6,6,500,400000,False,True,False,False,False,False,True,False,185
+166,44210444,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,160000,False,False,False,False,True,False,True,False,185
+167,44214621,"Shahra-e-Faisal, Karachi, Sindh",4,4,240,300000,False,True,False,False,False,False,True,False,371
+168,44236729,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,225000,False,False,True,False,False,False,True,False,185
+169,44237676,"Shadman, North Nazimabad, Karachi, Sindh",2,2,200,45000,False,False,False,False,True,False,True,False,369
+170,44246809,"Badar Commercial Area, DHA Phase 5, DHA Defence, Karachi, Sindh",2,3,122,60000,True,False,False,False,False,False,True,False,114
+171,44247793,"Bahria Apartments, Bahria Town Karachi, Karachi, Sindh",2,2,106,28000,True,False,False,False,False,False,True,False,115
+172,44247798,"Bahria Town - Precinct 10-A, Bahria Town Karachi, Karachi, Sindh",3,3,200,40000,False,True,False,False,False,False,True,False,123
+173,44250322,"Khalid Bin Walid Road, Karachi, Sindh",3,3,200,110000,True,False,False,False,False,False,True,False,287
+174,44252085,"Khalid Bin Walid Road, Karachi, Sindh",3,4,200,125000,True,False,False,False,False,False,True,False,287
+175,44281324,"Falcon Complex New Malir, Malir, Karachi, Sindh",6,7,500,240000,False,True,False,False,False,False,True,False,208
+176,44289458,"Saima Elite Villas, Malir, Karachi, Sindh",2,2,120,40000,False,True,False,False,False,False,True,False,363
+177,44302054,"Nazimabad 3, Nazimabad, Karachi, Sindh",3,3,108,28000,True,False,False,False,False,False,True,False,311
+178,44305129,"Tariq Road, Karachi, Sindh",4,5,250,160000,True,False,False,False,False,False,True,False,381
+179,44312155,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,120,36000,False,False,True,False,False,False,True,False,257
+180,44322988,"Clifton - Block 2, Clifton, Karachi, Sindh",3,3,200,65000,True,False,False,False,False,False,True,False,160
+181,44323605,"Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",3,3,172,60000,True,False,False,False,False,False,True,False,244
+182,44323607,"Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",3,3,178,60000,True,False,False,False,False,False,True,False,244
+183,44323611,"Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",3,3,172,60000,True,False,False,False,False,False,True,False,244
+184,44323614,"Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",3,3,178,60000,True,False,False,False,False,False,True,False,244
+185,44323622,"Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",3,3,178,60000,True,False,False,False,False,False,True,False,244
+186,44323628,"Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",3,3,172,60000,True,False,False,False,False,False,True,False,244
+187,44325282,"Creek Vista, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,422,300000,True,False,False,False,False,False,True,False,174
+188,44328876,"DHA Phase 5, DHA Defence, Karachi, Sindh",2,2,111,95000,True,False,False,False,False,False,True,False,180
+189,44331713,"DHA Phase 6, DHA Defence, Karachi, Sindh",4,4,300,230000,False,True,False,False,False,False,True,False,181
+190,44349624,"North Karachi - Sector 11-C/1, North Karachi, Karachi, Sindh",2,2,100,24000,True,False,False,False,False,False,True,False,316
+191,44349773,"DHA Phase 6, DHA Defence, Karachi, Sindh",3,3,500,100000,False,False,True,False,False,False,True,False,181
+192,44350077,"Clifton - Block 1, Clifton, Karachi, Sindh",2,2,83,35000,True,False,False,False,False,False,True,False,159
+193,44371748,"DHA Phase 7 Extension, DHA Defence, Karachi, Sindh",4,5,300,250000,False,True,False,False,False,False,True,False,182
+194,44376708,"Askari 5 - Sector G, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,5,500,160000,False,True,False,False,False,False,True,False,111
+195,44400558,"KDA Scheme 1 Extension, Karachi, Sindh",11,6,700,650000,False,True,False,False,False,False,True,False,285
+196,44407085,"Gulshan-e-Iqbal - Block 13/D-3, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",4,4,244,62000,True,False,False,False,False,False,True,False,252
+197,44407607,"DHA Phase 6, DHA Defence, Karachi, Sindh",4,4,250,210000,False,True,False,False,False,False,True,False,181
+198,44407629,"Clifton, Karachi, Sindh",3,4,244,170000,True,False,False,False,False,False,True,False,168
+199,44417555,"Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",4,5,267,72500,True,False,False,False,False,False,True,False,244
+200,44417598,"Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",4,5,267,75000,True,False,False,False,False,False,True,False,244
+201,44428833,"De Comforts, Federal B Area - Block 8, Federal B Area, Karachi, Sindh",2,2,83,30000,True,False,False,False,False,False,True,False,189
+202,44429340,"Frere Town, Karachi, Sindh",3,4,200,150000,True,False,False,False,False,False,True,False,224
+203,44431824,"Bath Island, Karachi, Sindh",2,2,133,60000,True,False,False,False,False,False,True,False,134
+204,44439980,"DHA Phase 2, DHA Defence, Karachi, Sindh",1,2,72,60000,False,False,False,True,False,False,True,False,178
+205,44440123,"Clifton - Block 2, Clifton, Karachi, Sindh",3,3,178,80000,True,False,False,False,False,False,True,False,160
+206,44441677,"DHA Phase 7, DHA Defence, Karachi, Sindh",3,3,500,150000,False,False,False,False,True,False,True,False,183
+207,44454340,"DHA Phase 7 Extension, DHA Defence, Karachi, Sindh",3,4,200,120000,False,False,False,False,True,False,True,False,182
+208,44460563,"DHA Phase 7, DHA Defence, Karachi, Sindh",4,6,300,240000,False,True,False,False,False,False,True,False,183
+209,44462462,"Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,3,183,210000,True,False,False,False,False,False,True,False,204
+210,44464084,"Bahria Town - Precinct 35, Bahria Sports City, Bahria Town Karachi, Karachi, Sindh",4,4,350,35000,False,True,False,False,False,False,True,False,131
+211,44464085,"Bahria Town - Precinct 11-B, Bahria Town - Precinct 11, Bahria Town Karachi, Karachi, Sindh",3,3,152,30000,False,True,False,False,False,False,True,False,127
+212,44464086,"Bahria Town - Ali Block, Bahria Town - Precinct 12, Bahria Town Karachi, Karachi, Sindh",3,3,125,30000,False,True,False,False,False,False,True,False,122
+213,44470778,"Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,4,180,180000,True,False,False,False,False,False,True,False,204
+214,44472845,"Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",4,6,292,341000,True,False,False,False,False,False,True,False,204
+215,44474182,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,3,300,88000,True,False,False,False,False,False,True,False,112
+216,44474295,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,5,375,150000,False,True,False,False,False,False,True,False,112
+217,44481324,"DHA Phase 6, DHA Defence, Karachi, Sindh",3,5,1500,180000,False,False,False,False,True,False,True,False,181
+218,44482965,"DHA Phase 8, DHA Defence, Karachi, Sindh",4,5,500,365000,False,True,False,False,False,False,True,False,185
+219,44484297,"Naya Nazimabad, Karachi, Sindh",2,2,240,65000,False,False,True,False,False,False,True,False,310
+220,44484315,"PIA Housing Society, Faisal Cantonment, Cantt, Karachi, Sindh",4,4,400,100000,False,False,True,False,False,False,True,False,330
+221,44484332,"PIA Housing Society, Faisal Cantonment, Cantt, Karachi, Sindh",4,4,400,100000,False,False,False,False,True,False,True,False,330
+222,44485789,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,3,300,85000,True,False,False,False,False,False,True,False,112
+223,44490945,"Emaar Ocean Front, DHA Phase 8, DHA Defence, Karachi, Sindh",3,5,243,190000,True,False,False,False,False,False,True,False,205
+224,44501285,"Emaar Coral Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,5,214,350000,True,False,False,False,False,False,True,False,203
+225,44502556,"DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,100,50000,True,False,False,False,False,False,True,False,181
+226,44504438,"Gulshan-e-Iqbal - Block 3, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,240,85000,False,False,True,False,False,False,True,False,253
+227,44506440,"PECHS Block 2, PECHS, Jamshed Town, Karachi, Sindh",3,3,150,70000,False,False,False,False,True,False,True,False,328
+228,44507680,"DHA Phase 6, DHA Defence, Karachi, Sindh",7,8,1000,650000,False,True,False,False,False,False,True,False,181
+229,44507924,"DHA Phase 6, DHA Defence, Karachi, Sindh",4,5,300,225000,False,True,False,False,False,False,True,False,181
+230,44517526,"DHA Phase 5, DHA Defence, Karachi, Sindh",3,3,244,80000,True,False,False,False,False,False,True,False,180
+231,44519870,"DHA Phase 8, DHA Defence, Karachi, Sindh",4,4,100,160000,False,True,False,False,False,False,True,False,185
+232,44530360,"DHA Phase 6, DHA Defence, Karachi, Sindh",1,1,72,50000,False,False,False,True,False,False,True,False,181
+233,44532100,"DHA Phase 2, DHA Defence, Karachi, Sindh",3,3,1000,275000,False,False,False,False,True,False,True,False,178
+234,44533749,"Daniyal Residency, Scheme 33, Karachi, Sindh",2,2,83,23000,True,False,False,False,False,False,True,False,188
+235,44535751,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,150000,False,False,False,False,True,False,True,False,185
+236,44536008,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,6,1000,560000,False,True,False,False,False,False,True,False,181
+237,44536623,"Clifton - Block 6, Clifton, Karachi, Sindh",4,4,367,260000,True,False,False,False,False,False,True,False,164
+238,44540861,"DHA Phase 4, DHA Defence, Karachi, Sindh",5,6,350,190000,False,True,False,False,False,False,True,False,179
+239,44541547,"DHA Phase 6, DHA Defence, Karachi, Sindh",0,2,56,50000,True,False,False,False,False,False,True,False,181
+240,44541563,"Bukhari Commercial Area, DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,111,60000,True,False,False,False,False,False,True,False,149
+241,44548538,"Emaar Coral Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,311,170000,True,False,False,False,False,False,True,False,203
+242,44548915,"Emaar Pearl Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,243,170000,True,False,False,False,False,False,True,False,206
+243,44550856,"Clifton - Block 2, Clifton, Karachi, Sindh",3,3,272,150000,True,False,False,False,False,False,True,False,160
+244,44554058,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,5,649,625000,False,True,False,False,False,False,True,False,181
+245,44556212,"Tariq Road, Karachi, Sindh",3,4,194,135000,True,False,False,False,False,False,True,False,381
+246,44559457,"Korangi Creek Cantonment, Korangi, Karachi, Sindh",3,2,120,27000,True,False,False,False,False,False,True,False,290
+247,44559917,"North Nazimabad - Block N, North Nazimabad, Karachi, Sindh",5,6,450,200000,False,True,False,False,False,False,True,False,324
+248,44576727,"PECHS Block 2, PECHS, Jamshed Town, Karachi, Sindh",2,2,100,60000,False,False,False,False,True,False,True,False,328
+249,44576786,"PECHS Block 2, PECHS, Jamshed Town, Karachi, Sindh",5,5,250,250000,False,True,False,False,False,False,True,False,328
+250,44581029,"Emaar Coral Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,2,167,150000,True,False,False,False,False,False,True,False,203
+251,44588188,"DHA Phase 6, DHA Defence, Karachi, Sindh",3,3,500,130000,False,False,False,False,True,False,True,False,181
+252,44589822,"Gulshan-e-Iqbal - Block 13/D-2, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,200,110000,False,True,False,False,False,False,True,False,251
+253,44597374,"Emaar Coral Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,3,182,140000,True,False,False,False,False,False,True,False,203
+254,44601948,"PECHS Block 2, PECHS, Jamshed Town, Karachi, Sindh",3,3,139,60000,True,False,False,False,False,False,True,False,328
+255,44602120,"Rahat Commercial Area, DHA Phase 6, DHA Defence, Karachi, Sindh",3,3,194,80000,True,False,False,False,False,False,True,False,348
+256,44607242,"Gulshan-e-Iqbal - Block 3, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,240,80000,False,False,False,False,True,False,True,False,253
+257,44614792,"Bahria Heights, Bahria Town Karachi, Karachi, Sindh",2,2,122,28000,True,False,False,False,False,False,True,False,116
+258,44615002,"DHA Phase 6, DHA Defence, Karachi, Sindh",0,1,56,55000,True,False,False,False,False,False,True,False,181
+259,44617401,"Sea View Apartments, Karachi, Sindh",3,3,333,190000,True,False,False,False,False,False,True,False,367
+260,44617947,"DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,50,70000,True,False,False,False,False,False,True,False,181
+261,44618119,"DHA Phase 6, DHA Defence, Karachi, Sindh",7,6,500,550000,False,True,False,False,False,False,True,False,181
+262,44619859,"Bath Island, Karachi, Sindh",3,3,206,170000,True,False,False,False,False,False,True,False,134
+263,44624892,"Gulshan-e-Iqbal - Block 13/D-2, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,167,48000,True,False,False,False,False,False,True,False,251
+264,44629813,"Saima Jinnah Avenue, Malir, Karachi, Sindh",3,4,244,76000,True,False,False,False,False,False,True,False,364
+265,44635153,"Gulshan-e-Iqbal - Block 7, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",0,0,250,125000,False,False,False,False,True,False,True,False,258
+266,44636157,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,6,1000,200000,False,False,False,False,True,False,True,False,185
+267,44637137,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,5,1000,450000,False,True,False,False,False,False,True,False,181
+268,44639892,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,140,45000,False,False,False,False,True,False,True,False,257
+269,44641564,"North Karachi - Sector 7-D1, North Karachi, Karachi, Sindh",2,2,120,19000,False,False,False,False,True,False,True,False,319
+270,44643278,"DHA Phase 5, DHA Defence, Karachi, Sindh",8,6,1000,375000,False,True,False,False,False,False,True,False,180
+271,44643470,"DHA Phase 8, DHA Defence, Karachi, Sindh",6,6,500,350000,False,True,False,False,False,False,True,False,185
+272,44643552,"DHA Phase 6, DHA Defence, Karachi, Sindh",6,6,500,550000,False,True,False,False,False,False,True,False,181
+273,44650890,"Bahria Town - Precinct 10-A, Bahria Town Karachi, Karachi, Sindh",3,3,200,38000,False,True,False,False,False,False,True,False,123
+274,44651147,"Bahria Town - Precinct 11-A, Bahria Town - Precinct 11, Bahria Town Karachi, Karachi, Sindh",3,3,200,35000,False,True,False,False,False,False,True,False,126
+275,44655636,"Saima Jinnah Avenue, Malir, Karachi, Sindh",3,4,244,76000,True,False,False,False,False,False,True,False,364
+276,44658452,"DHA Phase 8, DHA Defence, Karachi, Sindh",6,6,500,400000,False,True,False,False,False,False,True,False,185
+277,44659732,"Civil Lines, Karachi, Sindh",3,3,188,130000,True,False,False,False,False,False,True,False,158
+278,44669368,"Emaar Reef Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,278,175000,True,False,False,False,False,False,True,False,207
+279,44670093,"Rashid Minhas Road, Karachi, Sindh",3,3,161,35000,True,False,False,False,False,False,True,False,349
+280,44671844,"Allama Iqbal Road, PECHS, Jamshed Town, Karachi, Sindh",3,3,200,125000,False,False,True,False,False,False,True,False,106
+281,44672045,"Gulshan-e-Iqbal - Block 13/D-2, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,200,190000,False,True,False,False,False,False,True,False,251
+282,44672931,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,3,500,200000,False,False,True,False,False,False,True,False,185
+283,44677696,"Creek Vista, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,356,180000,True,False,False,False,False,False,True,False,174
+284,44678110,"DHA Phase 6, DHA Defence, Karachi, Sindh",6,6,500,425000,False,True,False,False,False,False,True,False,181
+285,44682625,"DHA Phase 5, DHA Defence, Karachi, Sindh",5,6,1000,500000,False,True,False,False,False,False,True,False,180
+286,44683321,"Bukhari Commercial Area, DHA Phase 6, DHA Defence, Karachi, Sindh",3,4,128,60000,True,False,False,False,False,False,True,False,149
+287,44683933,"Bahria Heights, Bahria Town Karachi, Karachi, Sindh",2,2,122,28000,True,False,False,False,False,False,True,False,116
+288,44685780,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,5,500,370000,False,True,False,False,False,False,True,False,181
+289,44687302,"Bahria Apartments, Bahria Town Karachi, Karachi, Sindh",2,2,106,25000,True,False,False,False,False,False,True,False,115
+290,44687331,"Bahria Town - Precinct 10-A, Bahria Town Karachi, Karachi, Sindh",3,3,200,36000,False,True,False,False,False,False,True,False,123
+291,44687338,"Bahria Homes - Iqbal Villas, Bahria Town - Precinct 2, Bahria Town Karachi, Karachi, Sindh",3,3,150,50000,False,True,False,False,False,False,True,False,118
+292,44689410,"Defence View Society, Karachi, Sindh",2,2,89,27000,True,False,False,False,False,False,True,False,198
+293,44691707,"Badar Commercial Area, DHA Phase 5, DHA Defence, Karachi, Sindh",2,2,113,48000,True,False,False,False,False,False,True,False,114
+294,44695059,"DHA Phase 7, DHA Defence, Karachi, Sindh",3,3,300,130000,False,False,False,False,True,False,True,False,183
+295,44695163,"DHA Phase 7, DHA Defence, Karachi, Sindh",2,2,300,110000,False,False,True,False,False,False,True,False,183
+296,44695503,"DHA Phase 7, DHA Defence, Karachi, Sindh",4,4,500,150000,False,False,False,False,True,False,True,False,183
+297,44695709,"DHA Phase 4, DHA Defence, Karachi, Sindh",4,4,300,250000,False,True,False,False,False,False,True,False,179
+298,44695892,"Defence View Phase 1, Defence View Society, Karachi, Sindh",3,3,120,110000,False,True,False,False,False,False,True,False,197
+299,44696103,"DHA Phase 1, DHA Defence, Karachi, Sindh",3,3,500,130000,False,False,False,False,True,False,True,False,176
+300,44700348,"DHA Phase 8, DHA Defence, Karachi, Sindh",6,6,1000,1000000,False,True,False,False,False,False,True,False,185
+301,44701254,"Sindh Baloch Housing Society, Gulistan-e-Jauhar, Karachi, Sindh",3,3,200,60000,False,True,False,False,False,False,True,False,372
+302,44703528,"DHA Phase 8, DHA Defence, Karachi, Sindh",6,6,1000,1000000,False,True,False,False,False,False,True,False,185
+303,44706307,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,6,500,375000,False,True,False,False,False,False,True,False,181
+304,44714159,"Badar Commercial Area, DHA Phase 5, DHA Defence, Karachi, Sindh",2,2,100,35000,True,False,False,False,False,False,True,False,114
+305,44718708,"DHA Phase 5, DHA Defence, Karachi, Sindh",4,5,500,250000,False,True,False,False,False,False,True,False,180
+306,44721215,"DHA Phase 2 Extension, DHA Defence, Karachi, Sindh",6,6,630,250000,False,True,False,False,False,False,True,False,177
+307,44721612,"Gulistan-e-Jauhar, Karachi, Sindh",3,3,200,57500,False,False,False,False,True,False,True,False,245
+308,44727072,"Emaar Reef Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,5,243,250000,True,False,False,False,False,False,True,False,207
+309,44728607,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,170000,False,False,False,False,True,False,True,False,185
+310,44729265,"DHA Phase 8, DHA Defence, Karachi, Sindh",4,5,120,175000,False,True,False,False,False,False,True,False,185
+311,44734683,"DHA Phase 8, DHA Defence, Karachi, Sindh",4,5,120,160000,False,True,False,False,False,False,True,False,185
+312,44736561,"Gulshan-e-Iqbal - Block 3, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",1,1,44,15000,False,False,False,False,True,False,True,False,253
+313,44736677,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,3,500,200000,False,False,True,False,False,False,True,False,185
+314,44736760,"DHA Phase 5, DHA Defence, Karachi, Sindh",4,4,560,200000,False,True,False,False,False,False,True,False,180
+315,44736895,"DHA Phase 2, DHA Defence, Karachi, Sindh",1,2,250,75000,False,False,False,False,True,False,True,False,178
+316,44737927,"Gulshan-e-Iqbal - Block 1, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,120,52000,False,False,True,False,False,False,True,False,246
+317,44740023,"Sehar Commercial Area, DHA Phase 7, DHA Defence, Karachi, Sindh",2,2,100,42000,True,False,False,False,False,False,True,False,368
+318,44740204,"Bufferzone - Sector 15-A/4, Buffer Zone, North Karachi, Karachi, Sindh",4,5,120,52000,False,False,False,False,True,False,True,False,148
+319,44747020,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,6,375,150000,False,True,False,False,False,False,True,False,112
+320,44747626,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",5,6,375,155000,False,True,False,False,False,False,True,False,112
+321,44751858,"Emaar Coral Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,5,233,280000,True,False,False,False,False,False,True,False,203
+322,44752231,"Emaar Pearl Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,4,180,180000,True,False,False,False,False,False,True,False,206
+323,44754401,"DHA Phase 4, DHA Defence, Karachi, Sindh",3,3,1000,158000,False,False,False,False,True,False,True,False,179
+324,44756612,"DHA Phase 5, DHA Defence, Karachi, Sindh",5,6,500,450000,False,True,False,False,False,False,True,False,180
+325,44758866,"Khalid Bin Walid Road, Karachi, Sindh",3,3,189,75000,True,False,False,False,False,False,True,False,287
+326,44762259,"Clifton - Block 4, Clifton, Karachi, Sindh",3,3,222,92000,True,False,False,False,False,False,True,False,162
+327,44766734,"Gulshan-e-Iqbal - Block 13/D-1, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,111,30000,False,False,False,False,True,False,True,False,250
+328,44767783,"Clifton - Block 4, Clifton, Karachi, Sindh",4,5,300,185000,True,False,False,False,False,False,True,False,162
+329,44768095,"Bath Island, Karachi, Sindh",4,5,267,200000,True,False,False,False,False,False,True,False,134
+330,44768906,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,100,140000,False,True,False,False,False,False,True,False,185
+331,44769427,"Saima Presidency, Malir Cantonment, Cantt, Karachi, Sindh",0,0,267,65000,False,True,False,False,False,False,True,False,365
+332,44771130,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,200000,False,False,True,False,False,False,True,False,185
+333,44773773,"DHA Phase 6, DHA Defence, Karachi, Sindh",6,6,500,310000,False,True,False,False,False,False,True,False,181
+334,44773990,"Emaar Pearl Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,272,180000,True,False,False,False,False,False,True,False,206
+335,44774711,"Emaar Reef Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,243,180000,True,False,False,False,False,False,True,False,207
+336,44775238,"Emaar Coral Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,243,170000,True,False,False,False,False,False,True,False,203
+337,44775407,"Emaar Reef Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",4,5,292,350000,True,False,False,False,False,False,True,False,207
+338,44781102,"DHA Phase 5, DHA Defence, Karachi, Sindh",4,4,500,350000,False,True,False,False,False,False,True,False,180
+339,44782641,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,4,300,85000,True,False,False,False,False,False,True,False,112
+340,44782822,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,4,300,90000,True,False,False,False,False,False,True,False,112
+341,44782842,"Saima Elite Villas, Malir, Karachi, Sindh",3,3,120,50000,False,True,False,False,False,False,True,False,363
+342,44785163,"Emaar Reef Towers, Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,3,182,175000,True,False,False,False,False,False,True,False,207
+343,44786275,"Creek Vista, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,361,175000,True,False,False,False,False,False,True,False,174
+344,44787572,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,2,500,160000,False,False,True,False,False,False,True,False,185
+345,44790597,"Emaar Crescent Bay, DHA Phase 8, DHA Defence, Karachi, Sindh",2,2,222,350000,True,False,False,False,False,False,True,False,204
+346,44792079,"Scheme 33, Karachi, Sindh",2,2,72,20000,True,False,False,False,False,False,True,False,366
+347,44793709,"DHA Phase 8, DHA Defence, Karachi, Sindh",7,6,1000,1000000,False,True,False,False,False,False,True,False,185
+348,44793912,"DHA Phase 8 - Zone A, DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,200000,False,False,True,False,False,False,True,False,184
+349,44796421,"DHA Phase 2 Extension, DHA Defence, Karachi, Sindh",2,2,100,35010,True,False,False,False,False,False,True,False,177
+350,44797203,"Navy Housing Scheme Karsaz, Karachi, Sindh",5,6,350,250000,False,True,False,False,False,False,True,False,308
+351,44797974,"DOHS Phase 2, Malir Cantonment, Cantt, Karachi, Sindh",4,5,500,130000,False,False,True,False,False,False,True,False,187
+352,44806931,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,160000,False,False,True,False,False,False,True,False,185
+353,44807085,"Nishat Commercial Area, DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,106,55000,True,False,False,False,False,False,True,False,315
+354,44807639,"Civil Lines, Karachi, Sindh",4,5,289,160000,True,False,False,False,False,False,True,False,158
+355,44811807,"Bahria Paradise, Bahria Town Karachi, Karachi, Sindh",5,5,500,120000,False,True,False,False,False,False,True,False,119
+356,44811808,"Bahria Apartments, Bahria Town Karachi, Karachi, Sindh",3,3,250,48000,True,False,False,False,False,False,True,False,115
+357,44811809,"Bahria Town - Quaid Villas, Bahria Town - Precinct 2, Bahria Town Karachi, Karachi, Sindh",3,3,200,60000,False,True,False,False,False,False,True,False,133
+358,44811849,"DHA Phase 6, DHA Defence, Karachi, Sindh",0,2,50,50000,True,False,False,False,False,False,True,False,181
+359,44820970,"Clifton - Block 2, Clifton, Karachi, Sindh",3,3,178,65000,True,False,False,False,False,False,True,False,160
+360,44824291,"Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",3,3,289,90000,True,False,False,False,False,False,True,False,113
+361,44825043,"Bufferzone - Sector 15-A/4, Buffer Zone, North Karachi, Karachi, Sindh",2,3,120,32000,False,False,False,False,True,False,True,False,148
+362,44825149,"Bufferzone - Sector 15-A/4, Buffer Zone, North Karachi, Karachi, Sindh",2,2,80,22000,False,False,False,False,True,False,True,False,148
+363,44828323,"DHA Phase 8, DHA Defence, Karachi, Sindh",6,6,500,400000,False,True,False,False,False,False,True,False,185
+364,44830912,"Gulistan-e-Jauhar, Karachi, Sindh",2,2,106,28000,True,False,False,False,False,False,True,False,245
+365,44832826,"Civil Lines, Karachi, Sindh",3,3,200,110000,True,False,False,False,False,False,True,False,158
+366,44833397,"Navy Housing Scheme Zamzama, Zamzama, Karachi, Sindh",3,4,500,265000,False,False,False,False,True,False,True,False,309
+367,44833529,"DHA Phase 6, DHA Defence, Karachi, Sindh",5,5,500,500000,False,True,False,False,False,False,True,False,181
+368,44833594,"Bahria Town - Ali Block, Bahria Town - Precinct 12, Bahria Town Karachi, Karachi, Sindh",3,3,125,30000,False,True,False,False,False,False,True,False,122
+369,44834439,"DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,50,27000,True,False,False,False,False,False,True,False,181
+370,44834828,"Bahria Town - Precinct 10-A, Bahria Town Karachi, Karachi, Sindh",3,4,200,30000,False,True,False,False,False,False,True,False,123
+371,44835064,"Saima Elite Villas, Malir, Karachi, Sindh",3,3,120,50000,False,True,False,False,False,False,True,False,363
+372,44835073,"Clifton - Block 2, Clifton, Karachi, Sindh",3,3,200,65000,True,False,False,False,False,False,True,False,160
+373,44835137,"Clifton - Block 2, Clifton, Karachi, Sindh",3,3,200,70000,True,False,False,False,False,False,True,False,160
+374,44835241,"DHA Phase 2 Extension, DHA Defence, Karachi, Sindh",6,6,1000,250000,False,True,False,False,False,False,True,False,177
+375,44835372,"Bahria Town - Precinct 8, Bahria Town Karachi, Karachi, Sindh",5,5,272,90000,False,True,False,False,False,False,True,False,132
+376,44835386,"Bahria Town - Precinct 10-A, Bahria Town Karachi, Karachi, Sindh",3,3,200,40000,False,True,False,False,False,False,True,False,123
+377,44835393,"Bahria Town - Precinct 11-A, Bahria Town - Precinct 11, Bahria Town Karachi, Karachi, Sindh",3,3,200,39000,False,True,False,False,False,False,True,False,126
+378,44835410,"Bahria Town - Precinct 11-A, Bahria Town - Precinct 11, Bahria Town Karachi, Karachi, Sindh",3,3,152,35000,False,True,False,False,False,False,True,False,126
+379,44835555,"Bahria Town - Precinct 11-A, Bahria Town - Precinct 11, Bahria Town Karachi, Karachi, Sindh",3,3,152,45000,False,True,False,False,False,False,True,False,126
+380,44835566,"Bahria Town - Precinct 11-B, Bahria Town - Precinct 11, Bahria Town Karachi, Karachi, Sindh",3,3,152,40000,False,True,False,False,False,False,True,False,127
+381,44835906,"DHA Phase 8, DHA Defence, Karachi, Sindh",3,4,500,170000,False,False,False,False,True,False,True,False,185
+382,44836382,"Nazimabad, Karachi, Sindh",3,3,167,45000,True,False,False,False,False,False,True,False,312
+383,44836787,"Clifton - Block 3, Clifton, Karachi, Sindh",3,3,183,80000,True,False,False,False,False,False,True,False,161
+384,44836839,"Gulshan-e-Iqbal - Block 11, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,144,45000,True,False,False,False,False,False,True,False,248
+385,44836845,"Gulistan-e-Jauhar, Karachi, Sindh",3,0,400,78000,False,False,True,False,False,False,True,False,245
+386,44837037,"DHA Phase 6, DHA Defence, Karachi, Sindh",3,4,500,110000,False,False,True,False,False,False,True,False,181
+387,44837082,"DHA Phase 6, DHA Defence, Karachi, Sindh",3,4,500,100000,False,False,True,False,False,False,True,False,181
+388,44837087,"Gulshan-e-Iqbal - Block 3, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,3,161,65000,True,False,False,False,False,False,True,False,253
+389,44837150,"North Karachi - Sector 11-C/3, North Karachi, Karachi, Sindh",2,3,120,30000,False,False,False,False,True,False,True,False,317
+390,44837162,"Abul Hassan Isphani Road, Karachi, Sindh",2,2,120,25000,False,False,True,False,False,False,True,False,104
+391,44837169,"Gulshan-e-Kaneez Fatima, Scheme 33, Karachi, Sindh",2,2,72,20000,True,False,False,False,False,False,True,False,262
+392,44837178,"Saima Arabian Villas, Gadap Town, Karachi, Sindh",2,2,83,18500,True,False,False,False,False,False,True,False,361
+393,44837183,"Gulshan-e-Kaneez Fatima - Block 2, Gulshan-e-Kaneez Fatima, Scheme 33, Karachi, Sindh",3,3,240,50000,False,False,False,False,True,False,True,False,261
+394,44837198,"Saima Arabian Villas, Gadap Town, Karachi, Sindh",2,2,83,18000,True,False,False,False,False,False,True,False,361
+395,44837201,"North Karachi - Sector 9, North Karachi, Karachi, Sindh",2,3,120,29000,False,False,False,False,True,False,True,False,320
+396,44837219,"Saima Arabian Villas, Gadap Town, Karachi, Sindh",2,2,83,18000,True,False,False,False,False,False,True,False,361
+397,44837249,"New Karachi - Sector 5-A/4, New Karachi - Sector 5-A, New Karachi, Karachi, Sindh",4,3,80,34000,False,True,False,False,False,False,True,False,313
+398,44837251,"Saima Arabian Villas, Gadap Town, Karachi, Sindh",2,2,120,24000,False,True,False,False,False,False,True,False,361
+399,44837257,"Saima Arabian Villas, Gadap Town, Karachi, Sindh",2,2,120,26000,False,True,False,False,False,False,True,False,361
+400,44837266,"North Karachi - Sector 11B, North Karachi, Karachi, Sindh",3,3,240,55000,False,False,True,False,False,False,True,False,318
+401,44837345,"Gulshan-e-Iqbal - Block 7, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,94,34000,True,False,False,False,False,False,True,False,258
+402,44837361,"Gulshan-e-Iqbal - Block 4A, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,120,34000,False,False,True,False,False,False,True,False,255
+403,44837371,"DHA Phase 6, DHA Defence, Karachi, Sindh",0,2,56,45000,True,False,False,False,False,False,True,False,181
+404,44837377,"Gulshan-e-Iqbal - Block 5, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",3,2,240,52000,False,False,False,False,True,False,True,False,256
+405,44837385,"Gulshan-e-Iqbal - Block 6, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",2,2,120,45000,False,False,True,False,False,False,True,False,257
+406,44837866,"DHA Phase 6, DHA Defence, Karachi, Sindh",0,2,50,32000,True,False,False,False,False,False,True,False,181
+407,44837874,"DHA Phase 6, DHA Defence, Karachi, Sindh",0,2,50,27000,True,False,False,False,False,False,True,False,181
+408,44837880,"DHA Phase 6, DHA Defence, Karachi, Sindh",2,2,106,50000,True,False,False,False,False,False,True,False,181
+409,44837881,"Federal B Area - Block 12, Federal B Area, Karachi, Sindh",4,5,400,129000,False,False,False,False,True,False,True,False,209
+410,44837902,"Federal B Area - Block 5, Federal B Area, Karachi, Sindh",0,0,500,145000,False,False,True,False,False,False,True,False,210
+411,44837979,"Bukhari Commercial Area, DHA Phase 6, DHA Defence, Karachi, Sindh",0,2,50,28000,True,False,False,False,False,False,True,False,149
+412,44838216,"Bahria Town - Ali Block, Bahria Town - Precinct 12, Bahria Town Karachi, Karachi, Sindh",3,3,125,38000,False,True,False,False,False,False,True,False,122
+413,44838230,"Bahria Town - Precinct 27, Bahria Town Karachi, Karachi, Sindh",3,3,235,28000,False,True,False,False,False,False,True,False,129
+414,44838236,"Grey Noor Tower & Shopping Mall, Scheme 33, Karachi, Sindh",3,4,189,50000,True,False,False,False,False,False,True,False,240
+415,44838241,"Bahria Town - Precinct 31, Bahria Town Karachi, Karachi, Sindh",3,3,235,27000,False,True,False,False,False,False,True,False,130
+416,44838278,"Bahria Sports City, Bahria Town Karachi, Karachi, Sindh",4,4,350,35000,False,True,False,False,False,False,True,False,120
+417,44839386,"Saima Arabian Villas, Gadap Town, Karachi, Sindh",4,4,120,45000,False,True,False,False,False,False,True,False,361
+418,44839686,"Manzoor Colony, Karachi, Sindh",3,2,85,25000,True,False,False,False,False,False,True,False,306
+419,44839780,"Model Colony - Malir, Malir, Karachi, Sindh",2,3,190,35000,False,True,False,False,False,False,True,False,307
+420,44840071,"DHA Phase 7, DHA Defence, Karachi, Sindh",2,2,300,80000,False,False,True,False,False,False,True,False,183
+421,44840167,"Gulshan-e-Iqbal - Block 10, Gulshan-e-Iqbal, Gulshan-e-Iqbal Town, Karachi, Sindh",4,4,244,75000,True,False,False,False,False,False,True,False,247
+422,44840227,"Gulshan-e-Maymar - Sector R, Gulshan-e-Maymar, Gadap Town, Karachi, Sindh",2,3,120,32000,False,True,False,False,False,False,True,False,263
+423,44840268,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",4,5,333,115000,True,False,False,False,False,False,True,False,112
+424,44840351,"Askari 5 - Sector J, Askari 5, Malir Cantonment, Cantt, Karachi, Sindh",4,5,333,115000,True,False,False,False,False,False,True,False,112
+425,44840409,"PECHS Block 2, PECHS, Jamshed Town, Karachi, Sindh",3,3,156,100000,False,False,False,False,True,False,True,False,328
+426,44840420,"Bahria Paradise, Bahria Town Karachi, Karachi, Sindh",5,5,500,115000,False,True,False,False,False,False,True,False,119
+427,44840472,"Bahria Apartments, Bahria Town Karachi, Karachi, Sindh",2,2,106,28000,True,False,False,False,False,False,True,False,115
+428,44840525,"Bahria Apartments, Bahria Town Karachi, Karachi, Sindh",3,3,283,48000,True,False,False,False,False,False,True,False,115
+429,44840557,"Bahria Apartments, Bahria Town Karachi, Karachi, Sindh",4,4,400,70000,True,False,False,False,False,False,True,False,115
+430,44840781,"DHA Phase 2 Extension, DHA Defence, Karachi, Sindh",6,6,666,250000,False,True,False,False,False,False,True,False,177
+431,44840797,"North Nazimabad - Block H, North Nazimabad, Karachi, Sindh",2,2,94,30000,True,False,False,False,False,False,True,False,321
+432,44840854,"Bahria Sports City, Bahria Town Karachi, Karachi, Sindh",4,4,350,55000,False,True,False,False,False,False,True,False,120
+433,44841166,"North Nazimabad - Block I, North Nazimabad, Karachi, Sindh",3,3,200,58000,False,False,False,False,True,False,True,False,322
+434,44841249,"Kings Cottages, Gulistan-e-Jauhar - Block 7, Gulistan-e-Jauhar, Karachi, Sindh",3,3,161,52000,True,False,False,False,False,False,True,False,289
+435,45138796,1000 Square Yards House For sale Is Available In DHA Phase 2,3,3,1000,165000000,False,True,False,False,False,False,False,True,7
+436,45138793,1000 Square Yards House available for sale in DHA Phase 2 if you hurry,3,3,1000,165000000,False,True,False,False,False,False,False,True,8
+437,45115440,1000 YARDS DEMOLISH BUNGALOW FOR SALE,3,3,1000,185000000,False,True,False,False,False,False,False,True,9
+438,45140740,120 Ground Plus One Bungalow Available for Sale in Capital Society,4,5,120,25500000,False,True,False,False,False,False,False,True,12
+439,45138819,1287 Square Feet Flat In Central University Road For sale,3,3,143,14900000,True,False,False,False,False,False,False,True,14
+440,45138818,1287 Square Feet Flat In University Road For sale At Good Location,3,3,143,14900000,True,False,False,False,False,False,False,True,15
+441,45138810,1287 Square Feet Flat Is Available In University Road,3,3,143,14900000,True,False,False,False,False,False,False,True,16
+442,45138324,1300 Square Feet Flat Is Available For sale In Gulistan-e-Jauhar - Block 15,3,3,144,11000000,True,False,False,False,False,False,False,True,17
+443,45065725,152 Square Yards House Available For sale In Bahria Town - Precinct 11-A,3,3,152,16500000,False,True,False,False,False,False,False,True,21
+444,45065732,152 Square Yards House For sale In Beautiful Bahria Homes - Iqbal Villas,3,3,152,19000000,False,True,False,False,False,False,False,True,22
+445,44274178,2 Bed Apartment For Sale In Emaar Pearl Towers,2,3,182,57500000,True,False,False,False,False,False,False,True,25
+446,43059392,2 Bed Flat For Sale In Emaar Pearl Tower,2,3,389,150000000,True,False,False,False,False,False,False,True,37
+447,44107797,2 Bed Flat For Sale In Emaar Pearl Tower,2,3,181,60000000,True,False,False,False,False,False,False,True,37
+448,44752861,2 Bedroom Apartment For Sale,2,3,182,64000000,True,False,False,False,False,False,False,True,38
+449,44753093,2 Bedroom Apartment For Sale,2,3,180,66000000,True,False,False,False,False,False,False,True,38
+450,45139705,235 Square Yards House For sale In Bahria Town - Precinct 27 Karachi,3,3,235,17000000,False,True,False,False,False,False,False,True,44
+451,45139717,235 Square Yards House For sale In Karachi,3,3,235,16000000,False,True,False,False,False,False,False,True,45
+452,45141057,240 SQYD Brand New Ground Plus One Bungalow Available for Sale in Capital Society,6,6,240,47000000,False,True,False,False,False,False,False,True,46
+453,45138667,2400 Square Feet Flat For sale In Bath Island Bath Island,4,4,267,82500000,True,False,False,False,False,False,False,True,50
+454,45138674,"2600 Square Feet Flat For sale In Bath Island Bath Island In Only Rs. 65,000,000",4,4,289,65000000,True,False,False,False,False,False,False,True,52
+455,44753128,2700 Square Feet Flat In Emaar Pearl Towers Is Best Option,2,3,300,93000000,True,False,False,False,False,False,False,True,54
+456,44656210,3 Bed DD Flat For Sale,3,3,139,14000000,True,False,False,False,False,False,False,True,58
+457,44777993,3 Bedroom Apartment For Sale,3,4,237,52500000,True,False,False,False,False,False,False,True,64
+458,45066197,350 Square Yards House available for sale in Bahria Town - Precinct 35 if you hurry,4,4,350,21000000,False,True,False,False,False,False,False,True,70
+459,42163035,375 Square Yards House Is Available For sale In Askari 5 - Sector J,5,5,375,69500000,False,True,False,False,False,False,False,True,72
+460,45138341,700 Square Feet Flat In Gulistan-e-Jauhar - Block 18 Is Best Option,3,3,78,4000000,True,False,False,False,False,False,False,True,93
+461,45138803,780 Square Feet Flat In University Road Is Best Option,3,3,87,9000000,True,False,False,False,False,False,False,True,94
+462,45139693,A Palatial Residence For sale In Bahria Town - Precinct 11-A Karachi,3,3,200,18500000,False,True,False,False,False,False,False,True,95
+463,45138814,A Perfect Flat Awaits You In University Road University Road,3,3,143,14900000,True,False,False,False,False,False,False,True,96
+464,45138815,A Stunning Flat Is Up For Grabs In University Road University Road,3,3,143,14900000,True,False,False,False,False,False,False,True,100
+465,45139707,A Stunning House Is Up For Grabs In Bahria Homes - Iqbal Villas Karachi,3,3,152,21500000,False,True,False,False,False,False,False,True,101
+466,45138370,A Upper Portion Of 160 Square Yards In Gulistan-e-Jauhar - Block 12,3,3,160,13500000,False,False,False,False,True,False,False,True,102
+467,43740196,A beautiful ready to move house available in the peaceful society of Malir,3,4,120,25000000,False,True,False,False,False,False,False,True,103
+468,45138808,Affordable Flat For sale In University Road,3,3,87,9000000,True,False,False,False,False,False,False,True,105
+469,43697031,Apartment For Sale Shahra E Faisal Near Aisha Bawani,3,3,189,22500000,True,False,False,False,False,False,False,True,109
+470,45139718,Bahria Homes - Iqbal Villas House Sized 152 Square Yards For sale,3,3,152,21000000,False,True,False,False,False,False,False,True,117
+471,45065987,Bahria Town - Ali Block House Sized 125 Square Yards Is Available,3,3,125,15000000,False,True,False,False,False,False,False,True,121
+472,45139715,Bahria Town - Precinct 11-A House Sized 200 Square Yards,3,3,200,18500000,False,True,False,False,False,False,False,True,124
+473,45139626,Book Flat Today In Bahria Apartments,3,3,250,20000000,True,False,False,False,False,False,False,True,136
+474,45065736,Book House Today In Bahria Town - Precinct 11-A,3,3,152,16500000,False,True,False,False,False,False,False,True,137
+475,45138797,Book House Today In DHA Phase 2,3,3,1000,165000000,False,True,False,False,False,False,False,True,138
+476,44782168,Brand New Apartment For Sale Purpose,3,4,300,39000000,True,False,False,False,False,False,False,True,141
+477,44745939,Brand New Houses For sale Purpose,5,6,375,69500000,False,True,False,False,False,False,False,True,146
+478,44746317,Brand New Houses For sale Purpose,5,6,375,67000000,False,True,False,False,False,False,False,True,146
+479,44493513,Bungalow For Sell On Investor Rate In Gulistan E Johar Block 14,7,6,600,75000000,False,True,False,False,False,False,False,True,150
+480,45139116,Bungalow In Block 5 Clifton - 1+3 Bedrooms,4,5,250,67500000,False,True,False,False,False,False,False,True,151
+481,45138671,Buy A Centrally Located 2000 Square Feet Flat In Bath Island,3,3,222,67500000,True,False,False,False,False,False,False,True,152
+482,45139692,Buying A House In Karachi?,3,3,200,18500000,False,True,False,False,False,False,False,True,156
+483,44327856,"Defence Phase VI, 500 Yards, 2 Unit Bungalow for Sale",6,6,500,125000000,False,True,False,False,False,False,False,True,192
+484,44327788,"Defence Phase Vi, 500 Yards Bungalow For Sale 2 Plus 3 Bedroom",5,5,500,107500000,False,True,False,False,False,False,False,True,193
+485,44327930,Defence Phase Vii 500 Yards Bungalow 1 Plus 2 Bedroom,3,3,500,85000000,False,True,False,False,False,False,False,True,194
+486,44333119,Defence Phase Viii 120 Yards Brand New Bungalow 1 Plus 2 Bedroom,3,3,120,58000000,False,True,False,False,False,False,False,True,195
+487,44333014,"Defence Phase Viii, 1000 Yards, Brand New Bungalow 2 Plus 4 Bedroom",6,6,1000,420000000,False,True,False,False,False,False,False,True,196
+488,45138804,Flat For sale Situated In University Road,3,3,87,9000000,True,False,False,False,False,False,False,True,215
+489,45138806,Flat Is Available For sale In University Road,3,3,87,9000000,True,False,False,False,False,False,False,True,217
+490,45138820,Flat Is Available For sale In University Road,3,3,143,14900000,True,False,False,False,False,False,False,True,217
+491,45138366,Flat Of 750 Square Feet In Gulistan-e-Jauhar - Block 18 Is Available,3,3,83,5500000,True,False,False,False,False,False,False,True,218
+492,45138807,Flat Of 780 Square Feet Available In University Road,3,3,87,9000000,True,False,False,False,False,False,False,True,219
+493,45138669,Flat Sized 2400 Square Feet Is Available For sale In Bath Island,4,4,267,82500000,True,False,False,False,False,False,False,True,220
+494,45139624,Get In Touch Now To Buy A 950 Square Feet Flat In Karachi,2,2,106,8500000,True,False,False,False,False,False,False,True,228
+495,45139722,Get In Touch Now To Buy A House In Bahria Paradise,5,5,500,49000000,False,True,False,False,False,False,False,True,230
+496,43935180,Get Your Hands On Flat In Karachi Best Area,3,4,250,36000000,True,False,False,False,False,False,False,True,232
+497,45138792,Get Your Hands On House In Karachi Best Area,3,3,1000,165000000,False,True,False,False,False,False,False,True,233
+498,45138798,Good 1000 Square Yards House For sale In DHA Phase 2,3,3,1000,165000000,False,True,False,False,False,False,False,True,235
+499,45066202,Good 350 Square Yards House For sale In Bahria Town - Precinct 35,4,4,350,21000000,False,True,False,False,False,False,False,True,236
+500,45065740,Gorgeous 152 Square Yards House For sale Available In Bahria Town - Precinct 11-B,3,3,152,14000000,False,True,False,False,False,False,False,True,238
+501,45138466,Gorgeous Prime Location 10 Marla Flat For sale Available In Askari 5 - Sector J,3,3,250,45000000,True,False,False,False,False,False,False,True,239
+502,45139706,House For Grabs In 235 Square Yards Karachi,3,3,235,15500000,False,True,False,False,False,False,False,True,267
+503,45139622,House for sale,1,1,40,1600000,False,True,False,False,False,False,False,True,270
+504,45138673,Ideal Flat Is Available For sale In Bath Island,4,4,333,65000000,True,False,False,False,False,False,False,True,271
+505,45139724,Ideal House For sale In Bahria Town - Precinct 10-A,3,3,200,19000000,False,True,False,False,False,False,False,True,272
+506,45138812,Ideally Located Flat Of 1287 Square Feet Is Available For sale In University Road,3,3,143,14900000,True,False,False,False,False,False,False,True,274
+507,45138340,Ideally Located Flat Of 950 Square Feet Is Available For sale In Karachi,3,3,106,7000000,True,False,False,False,False,False,False,True,275
+508,45139728,Ideally Located House For sale In Bahria Homes - Iqbal Villas Available,3,3,152,21500000,False,True,False,False,False,False,False,True,276
+509,45138791,Ideally Located House For sale In DHA Phase 2 Available,3,3,1000,165000000,False,True,False,False,False,False,False,True,277
+510,44106757,In Emaar Pearl Towers Flat Sized 1634 Square Feet For Sale,2,3,182,44000000,True,False,False,False,False,False,False,True,280
+511,43958909,Latifi Duplex Flat For Sale,4,4,300,22500000,True,False,False,False,False,False,False,True,293
+512,45138333,Looking For A Flat In Gulistan-e-Jauhar - Block 15,3,3,144,11000000,True,False,False,False,False,False,False,True,296
+513,45138362,Looking For A Flat In Gulistan-e-Jauhar - Block 18,3,3,78,4000000,True,False,False,False,False,False,False,True,297
+514,45138813,Looking For A Flat In University Road,3,3,143,14900000,True,False,False,False,False,False,False,True,298
+515,45139702,Looking For A House In Bahria Paradise,5,5,500,49000000,False,True,False,False,False,False,False,True,299
+516,45139716,Looking For A House In Bahria Town - Precinct 27,3,3,235,17500000,False,True,False,False,False,False,False,True,300
+517,44255324,Lower Portion For Grabs In 2700 Square Feet Karachi,3,4,300,27000000,False,False,True,False,False,False,False,True,302
+518,45138668,Ready To Buy A Flat 2400 Square Feet In Bath Island,4,4,267,85000000,True,False,False,False,False,False,False,True,350
+519,45138811,Ready To Buy A Flat In University Road University Road,3,3,143,14900000,True,False,False,False,False,False,False,True,351
+520,45139711,Ready To Buy A House 350 Square Yards In Bahria Sports City,4,4,350,22000000,False,True,False,False,False,False,False,True,352
+521,45065989,Ready To Buy A House In Bahria Town - Ali Block Karachi,3,3,125,15000000,False,True,False,False,False,False,False,True,353
+522,45139714,Reserve A House Now In Bahria Town - Precinct 10-A,3,3,200,18500000,False,True,False,False,False,False,False,True,357
+523,45065728,Stunning 152 Square Yards House In Bahria Town - Precinct 11-B Available,3,3,152,14000000,False,True,False,False,False,False,False,True,377
+524,45138805,Stunning 780 Square Feet Flat In University Road Available,3,3,87,9000000,True,False,False,False,False,False,False,True,378
+525,45139713,Stunning House Is Available For sale In Bahria Town - Quaid Villas,3,3,200,23500000,False,True,False,False,False,False,False,True,379
+526,45139709,This Is Your Chance To Buy House In Karachi,3,3,152,18000000,False,True,False,False,False,False,False,True,383
+527,45139628,To sale You Can Find Spacious Flat In Bahria Apartments,2,2,106,8500000,True,False,False,False,False,False,False,True,384
+528,45138821,University Road Flat Sized 1287 Square Feet Is Available,3,3,143,14900000,True,False,False,False,False,False,False,True,389
+529,45138816,University Road Flat Sized 1287 Square Feet Is Available,3,3,143,14900000,True,False,False,False,False,False,False,True,389
+530,45138809,University Road Flat Sized 780 Square Feet For sale,3,3,87,9000000,True,False,False,False,False,False,False,True,390
+531,45140750,We Are Offering Ready To Move Luxury 3 Bedrooms Iqbal Villa Is Available For Sale In Bahria Town Karachi,3,3,152,19000000,False,True,False,False,False,False,False,True,395
+532,45140696,We Are Offering Ready To Move Luxury 3 Bedrooms Precinct 11A Villa Is Available For Sale In Bahria Town Karachi,3,3,152,17000000,False,True,False,False,False,False,False,True,396
+533,45139710,Well-constructed House Available For sale In Bahria Town - Precinct 11-B,3,3,152,16000000,False,True,False,False,False,False,False,True,402
+534,45138794,You Can Find A Gorgeous House For sale In DHA Phase 2,3,3,1000,165000000,False,True,False,False,False,False,False,True,404
+535,45138560,new house avabile for sale,5,5,375,62000000,False,True,False,False,False,False,False,True,406
+536,45139623,sale A Flat In Karachi Prime Location,2,2,106,7500000,True,False,False,False,False,False,False,True,408
+537,45139712,sale A House In Karachi Prime Location,5,5,500,48000000,False,True,False,False,False,False,False,True,409
+538,44417617,02 Bed Dd Flat For Sale In Snober Twin Tower,2,3,133,8500000,True,False,False,False,False,False,False,True,0
+539,37432347,02 Bed Lounge Flat For Sale In Falaknaz Presidency,2,2,83,6600000,True,False,False,False,False,False,False,True,1
+540,41595506,03 Bed DD 1750 Sq. Ft Flat For Sale,3,2,161,14500000,True,False,False,False,False,False,False,True,2
+541,44069871,03 Bed DD Flat For Sale,3,2,161,14500000,True,False,False,False,False,False,False,True,3
+542,45154542,03 Bed DD Flat with Pent House for Sale in Saima Jinnah Avenue,3,5,244,45000000,True,False,False,False,False,False,False,True,4
+543,45154737,1 st floor portion for sale,2,2,120,15000000,False,False,False,False,True,False,False,True,5
+544,44571323,10 Year Old Owner Built Neat And Clean Specious Decent Planning Bungalow For Sale Dha Phase 6 Near Masjid E Ali,6,6,1000,250000000,False,True,False,False,False,False,False,True,6
+545,45154946,100YARD BRANDNEW MOST GORGEOUS AND ARCHITECTURE ULTRA MODERN STYLE DOUBLE STORY BUNGALOW FOR SELL IN DHA PHASE 7 EXT WITH FULL BASEMENT. MOST ELITE CLASS LOCATION IN DHA KARACHI. .,3,3,100,43500000,False,True,False,False,False,False,False,True,10
+546,45152185,110 Square Yards Upper Portion In Central North Nazimabad - Block I For sale,2,2,110,10000000,False,False,False,False,True,False,False,True,11
+547,40427647,120 Yds. Ground 1 Brand New House For Sale,4,5,120,26000000,False,True,False,False,False,False,False,True,13
+548,43706333,1440 Square Feet House In Garden East For Sale,5,5,160,52500000,False,True,False,False,False,False,False,True,18
+549,45152186,"150 Square Yards Upper Portion For sale In North Nazimabad - Block I Karachi In Only Rs. 14,000,000",3,3,150,14000000,False,False,False,False,True,False,False,True,19
+550,45153751,1500 Square Feet Flat For Sale In Gulistan-e-jauhor Block-16,2,3,167,13000000,True,False,False,False,False,False,False,True,20
+551,45152772,1650 sq ft 4 bed dd flat for sale amil colony jamshed road near islamia collage,4,4,183,36500000,True,False,False,False,False,False,False,True,23
+552,44906878,2 Bed Apartment For Sale In Abdullah Terrace Jauhar Gulistan-e-jauhar Block 16,2,2,111,8800000,True,False,False,False,False,False,False,True,24
+553,44609090,2 Bed Corner Flat In Aman Tower Golden chance deal,2,2,83,3700000,True,False,False,False,False,False,False,True,26
+554,44608784,2 Bed Corner Flat In Aman Tower On Economical Rates,2,2,83,3700000,True,False,False,False,False,False,False,True,27
+555,45152108,2 Bed D/D Flat For Sale (5th Floor),2,2,106,7300000,True,False,False,False,False,False,False,True,28
+556,43702938,"2 Bed DD Apartment For Sale In Gulzar E Hijri Scheme 33, Karachi,",2,2,100,5000000,True,False,False,False,False,False,False,True,29
+557,44945793,2 Bed DD Apartment for sale in Saima Jinnah Avenue,2,3,144,21500000,True,False,False,False,False,False,False,True,30
+558,43277128,2 Bed DD Bungalow Facing Flat For Sale,2,2,111,9500000,True,False,False,False,False,False,False,True,31
+559,44475666,2 Bed Dd Apartment For Sale In Dha Phase 2 4th Floor Tail Flooring Good Loction Rezenabale Demand,2,2,106,6700000,True,False,False,False,False,False,False,True,32
+560,44962890,2 Bed Dd Flat For Sale In Abdullah Terrace Gulistan E Johar Block 16,2,2,111,8500000,True,False,False,False,False,False,False,True,33
+561,44257255,2 Bed Dd Flat For Sale In Noman Residencia,2,2,122,9800000,True,False,False,False,False,False,False,True,34
+562,43473050,2 Bed Dd Flat For Sale In Saima Presidency,2,2,122,14500000,True,False,False,False,False,False,False,True,35
+563,44994046,2 Bed Drawing Dining Flat On Sale In Luxurious Apartment Gold Line Residency For Better Investment,2,2,267,15000000,True,False,False,False,False,False,False,True,36
+564,45154932,"200 Square Yards House available for sale in Bahria Town - Quaid Villas, Karachi",3,4,200,22000000,False,True,False,False,False,False,False,True,39
+565,45154933,200 Square Yards Spacious House Available In Bahria Town - Precinct 10-A For sale,3,4,200,17000000,False,True,False,False,False,False,False,True,40
+566,45152606,200 sq yards 3 bed dd brand new portion for sale near hassan square waseem bagh,3,3,200,23500000,False,False,True,False,False,False,False,True,41
+567,43150045,"2000 Square Feet Flat For Sale In Garden East Karachi In Only Rs. 35,000,000",4,4,222,35000000,True,False,False,False,False,False,False,True,42
+568,45154936,235 Square Yards House Available For sale In Bahria Town - Precinct 31,3,4,235,13500000,False,True,False,False,False,False,False,True,43
+569,44367591,240 Sq: Yards House For Sale In Capital Chs,6,6,240,49000000,False,True,False,False,False,False,False,True,47
+570,44960743,240 Sq: Yards House For Sale In Gulistan-e-johar Block 2,6,6,240,54000000,False,True,False,False,False,False,False,True,48
+571,44046366,240 Yards Portion For Sale In Gulshan-e-iqbal - Block/1,3,3,240,26000000,False,False,False,False,True,False,False,True,49
+572,44721359,250 Sq Yd Brand New Town House,4,4,250,85000000,False,True,False,False,False,False,False,True,51
+573,45152911,2600sqft 3 bed dd askari 5 sector block J for sale,3,3,289,41000000,True,False,False,False,False,False,False,True,53
+574,45155001,2bed drawing lounge apartment,2,2,111,14000000,True,False,False,False,False,False,False,True,55
+575,40758070,2nd Floor Portion With Roof Is Available On Booking,3,3,240,30000000,False,False,False,False,True,False,False,True,56
+576,44945817,3 Bed DD Apartment for sale in Saima Jinnah Avenue,3,4,244,32000000,False,True,False,False,False,False,False,True,57
+577,36305040,3 Bed DD West Open Semi Furnished Flat For Sale In Saima Jinnah Avenue,3,4,250,31000000,True,False,False,False,False,False,False,True,59
+578,43976268,3 Bed Dd Flat For Sale In Akbar Residency Gulistan-e-jauhar Block 15 C-237,3,3,167,16000000,True,False,False,False,False,False,False,True,60
+579,42846557,3 Bed Dd Flat For Sale In Rafi Premier Residency,3,4,194,18000000,True,False,False,False,False,False,False,True,61
+580,36253221,3 Bed Dd Flat For Sale In Sohni Golf View Apartment,3,4,194,16000000,True,False,False,False,False,False,False,True,62
+581,43386242,3 Bed Dd New Project,3,3,128,13500000,True,False,False,False,False,False,False,True,63
+582,43916166,3 Rooms Corner Apartment In Aman Tower For Sale On Invester Rates,2,2,83,3700000,True,False,False,False,False,False,False,True,65
+583,42406442,3 Side Corner House For Sale In Bufferzone 15-a 4,2,2,120,20500000,False,True,False,False,False,False,False,True,66
+584,42003111,3 Side Full Floor Apartment For Sale In Rahat Commercial,3,4,233,23500000,True,False,False,False,False,False,False,True,67
+585,45152618,300 Yards Duplex For Sale in Phase 6 DHA,4,4,300,75000000,False,True,False,False,False,False,False,True,68
+586,44435758,350 Square Yards Corner Portion For Sale In Gulistan-e-Jauhor Block-14,3,3,350,26000000,False,False,True,False,False,False,False,True,69
+587,36253161,3600 Sq. Ft 04b Ed Dd Flat For Sale In Tulip Tower,4,6,400,27000000,True,False,False,False,False,False,False,True,71
+588,40479533,"3rd Floor, Corner Flat",3,3,289,35500000,True,False,False,False,False,False,False,True,73
+589,44663177,4 BED DD Bismillah Tower Flat for Sale,4,4,300,18500000,True,False,False,False,False,False,False,True,74
+590,45154806,4 Bed DD Afnan Duplex with Roof For Sale in Gulistan-e-Jauhar Block 3A,4,4,244,19900000,True,False,False,False,False,False,False,True,75
+591,44273939,4 Bed Dd Flat For Sale In Lateef Duplex Luxuriant,4,5,300,22000000,True,False,False,False,False,False,False,True,76
+592,43761370,4 Bed Dd For Sale Flat,4,4,222,42500000,True,False,False,False,False,False,False,True,77
+593,42950628,4 Bed Drawing Dining Apartment Gulshan Iqbal Block 13 a Main Hasan Square,4,4,194,16500000,True,False,False,False,False,False,False,True,78
+594,44770398,4 Bedrooms Upper Floor Sea Facing Apartment For Sale,4,5,418,82500000,True,False,False,False,False,False,False,True,79
+595,44149307,4 bed drawing with Roof flat available for sale,4,4,211,42500000,True,False,False,False,False,False,False,True,80
+596,45116538,400 Square Yard Brand New Portion For Sale In Gulistan-e-jauhor Block-3,4,4,400,32500000,False,False,False,False,True,False,False,True,81
+597,45154877,400 Yards 6 bed DD Banglow For Sale in Jauhar VIP Block 14,6,6,400,58500000,False,True,False,False,False,False,False,True,82
+598,44643811,"400 yards best, affordable and luxurious bungalow available for sell in Gulshan e Iqbal Block 6.",7,6,400,79000000,False,True,False,False,False,False,False,True,83
+599,43719889,450 Square Yard House Is Available For Sale,8,8,450,68500000,False,True,False,False,False,False,False,True,84
+600,44518343,4bd Dd For Sale,4,4,200,36000000,True,False,False,False,False,False,False,True,85
+601,44840950,500 Square Yards House For sale In Beautiful Bahria Paradise,5,5,500,46000000,False,True,False,False,False,False,False,True,86
+602,45152504,500 Yards Full Basement Bungalow For Sale in Phase 6,5,5,500,155000000,False,True,False,False,False,False,False,True,87
+603,45152585,500 Yards Fully Maintained Bungalow For Sale,5,5,500,105000000,False,True,False,False,False,False,False,True,88
+604,45152603,500 Yards Fully Maintained House For Sale,5,5,500,130000000,False,True,False,False,False,False,False,True,89
+605,43676030,500 Yards Two Unit Bungalow For Sale,6,6,500,110000000,False,True,False,False,False,False,False,True,90
+606,45152536,500 Yards Well Maintained Bungalow For Sale in Phase 6,5,5,500,105000000,False,True,False,False,False,False,False,True,91
+607,44030258,630 Square Feet Flat In Stunning North Karachi Is Available For sale,2,2,70,3500000,True,False,False,False,False,False,False,True,92
+608,43290512,A Perfect House Awaits You In Gulistan-e-Jauhar - Block 14 Karachi,7,8,600,75000000,False,True,False,False,False,False,False,True,97
+609,44411298,A Perfect House Awaits You In Shaheed Millat Road Shaheed Millat Road,6,6,302,90000000,False,True,False,False,False,False,False,True,98
+610,45152080,A Prime Location House At Affordable Price Awaits You,6,6,200,55000000,False,True,False,False,False,False,False,True,99
+611,44714256,Apartment For Sale,3,3,200,27500000,True,False,False,False,False,False,False,True,107
+612,43892113,Apartment For Sale,2,3,111,9500000,True,False,False,False,False,False,False,True,107
+613,44635336,Apartment For Sale In Gulistan-e-jauhor Block-16 Main Road Facing Project,2,2,111,8200000,True,False,False,False,False,False,False,True,108
+614,37459267,Apartment Is Available For Sale,3,3,200,21000000,True,False,False,False,False,False,False,True,110
+615,45154934,Bahria Town - Precinct 11-A House Sized 200 Square Yards For sale,3,4,200,17000000,False,True,False,False,False,False,False,True,125
+616,44529365,Beautiful Fully Furnished and Renovated Apartment with Lift and Parking,3,3,144,18000000,True,False,False,False,False,False,False,True,135
+617,39093704,Brand New 2 Bed Dd Apartment Available For Sale At Saima Royal Residency,2,2,133,16000000,True,False,False,False,False,False,False,True,139
+618,27359086,Brand New 3 Bedroom Drawing Dining Flat Available For Sale At Al Khaleej Tower,3,4,178,16000000,True,False,False,False,False,False,False,True,140
+619,44774806,Brand New Apartments In Al Gafoor,3,3,167,21000000,True,False,False,False,False,False,False,True,142
+620,26583041,Brand New Flat Available For Sale At Saima Royal Residency,2,2,122,15000000,True,False,False,False,False,False,False,True,143
+621,45152538,Brand New Ground plus 1 House Available for sale in north karachi sector 11C/2,6,6,170,27500000,False,True,False,False,False,False,False,True,144
+622,44819457,Brand New House For Sale 225 Sqyd,5,5,225,90000000,False,True,False,False,False,False,False,True,145
+623,43558300,Brand New Studio Flat For Sale Chance Deal,4,2,56,5600000,True,False,False,False,False,False,False,True,147
+624,43969386,Buy East Open 120 Square Yards House At Highly Affordable Price,2,2,120,11900000,False,True,False,False,False,False,False,True,153
+625,44762387,Buying A Flat In Gulistan-e-Jauhar - Block 15?,3,3,150,9800000,True,False,False,False,False,False,False,True,154
+626,41987954,Buying A Flat In Karachi?,2,2,78,8000000,True,False,False,False,False,False,False,True,155
+627,45152086,Buying A Prime Location Flat In North Nazimabad - Block H?,3,3,156,17500000,True,False,False,False,False,False,False,True,157
+628,43790000,Corner 2 Bed Apartment For Sale In Aman Tower,2,2,83,3700000,True,False,False,False,False,False,False,True,169
+629,44535988,Corner 2 Bed Apartment In Aman Tower On Economical Rates,2,2,83,3800000,True,False,False,False,False,False,False,True,170
+630,43916123,Corner 2 Bed Lounge Apartment For Sale In Aman Tower On Investor Rates,2,2,83,3800000,True,False,False,False,False,False,False,True,171
+631,43961440,Corner 2 Bed Lounge Apartment In Aman Tower For Sale On Investor Rate,2,2,83,3800000,True,False,False,False,False,False,False,True,172
+632,44026874,Corner 2 Bed Lounge Apartment In Aman Tower For Sale Video Available,2,2,83,3700000,True,False,False,False,False,False,False,True,173
+633,45154985,Crown heights mazinine floor,2,2,78,5000000,True,False,False,False,False,False,False,True,175
+634,45153778,Defence 425 vi West open well maintained bungalow for sale,4,5,425,90000000,False,True,False,False,False,False,False,True,190
+635,45153829,Defence 500 vi near hafiz well maintained bungalow for sale,5,6,500,95000000,False,True,False,False,False,False,False,True,191
+636,40402866,Dha Phase 4 Bungalow For Sale 300 Yards Old But Maintained Proper 2unit,6,6,300,70000000,False,True,False,False,False,False,False,True,199
+637,41052222,Dha Phase 7 Outclass Designer House 1000 Years Pure Owner Famous Architect Design Pool,6,7,1000,260000000,False,True,False,False,False,False,False,True,200
+638,41776043,Dha Your Dream House Famous Architect 666 Yards,5,5,666,170000000,False,True,False,False,False,False,False,True,201
+639,45152067,Double Storey 200 Square Yards House For sale In North Nazimabad - Block I Karachi,6,6,200,36000000,False,True,False,False,False,False,False,True,202
+640,41020751,Flat Available For Sale,5,5,289,50000000,True,False,False,False,False,False,False,True,211
+641,44305510,Flat For Sale 2 Bed Dd,2,2,111,13500000,True,False,False,False,False,False,False,True,212
+642,43935984,Flat For Sale 3 Bd Dd With Terrace,3,3,167,31000000,True,False,False,False,False,False,False,True,213
+643,44501401,Flat For Sale 4 Bed Dd,4,5,211,25000000,True,False,False,False,False,False,False,True,214
+644,43521859,Flat Is Available For sale In Clifton - Block 4,4,2,122,13500000,True,False,False,False,False,False,False,True,216
+645,45152233,Flat available for sell near naheed,3,4,183,45000000,True,False,False,False,False,False,False,True,221
+646,45152432,"Flat for Sale in Noman Residencia , Scheme 33.",2,2,122,8000000,True,False,False,False,False,False,False,True,222
+647,42441928,Flat for sale,3,3,100,7800000,True,False,False,False,False,False,False,True,223
+648,45152733,Fully Maintained House For Sale in Phase 7,4,4,500,97500000,False,True,False,False,False,False,False,True,225
+649,40441770,Furnished Studio For Sale In Muslim Commercial,4,2,56,6500000,True,False,False,False,False,False,False,True,226
+650,45152078,"Get An Attractive Prime Location House In Karachi Under Rs. 55,000,000",6,6,400,55000000,False,True,False,False,False,False,False,True,227
+651,44241519,Get In Touch Now To Buy A Flat In Shaheed Millat Road,2,2,111,16500000,True,False,False,False,False,False,False,True,229
+652,45154935,Get In Touch Now To Buy A House In Bahria Town - Precinct 27,3,4,235,16000000,False,True,False,False,False,False,False,True,231
+653,45152187,Get Your Hands On House In Karachi Best Area,5,5,200,40000000,False,True,False,False,False,False,False,True,233
+654,45078897,Good 950 Square Feet Flat For sale In Bahria Apartments,2,2,106,7500000,True,False,False,False,False,False,False,True,237
+655,44819316,House For Sale 266 Sqyd,6,6,266,80000000,False,True,False,False,False,False,False,True,268
+656,45152955,House for Sale,6,5,80,11000000,False,True,False,False,False,False,False,True,269
+657,45153264,House for sale,1,1,40,1600000,False,True,False,False,False,False,False,True,270
+658,45153516,House for sale,3,2,80,3000000,False,True,False,False,False,False,False,True,270
+659,45152075,"Ideal Prime Location 950 Square Feet Flat Available In North Nazimabad - Block K, Karachi",2,2,106,6500000,True,False,False,False,False,False,False,True,273
+660,43942635,Idyllic Prime Location House Available In Navy Housing Scheme Karsaz - Phase 2 For sale,6,6,500,230000000,False,True,False,False,False,False,False,True,278
+661,40276421,In Askari 5 - Sector J House For sale Sized 375 Square Yards,5,7,375,62000000,False,True,False,False,False,False,False,True,279
+662,45152072,In Karachi You Can Find The Perfect Prime Location Flat For sale,2,2,133,8000000,True,False,False,False,False,False,False,True,281
+663,45153167,Jheel Park View (the actual landmark of Jheel Park),3,3,200,45000000,True,False,False,False,False,False,False,True,282
+664,42951138,Just Like Brand New Duplex For Sale,4,5,300,79000000,False,True,False,False,False,False,False,True,283
+665,44561840,Lavish Bungalow For Sale in Phase 7 DHA,5,5,300,87500000,False,True,False,False,False,False,False,True,294
+666,43363611,"Leased Flat For Sale in Scheme,33& Kaneez Fatima Society Commercial Row",3,3,200,14000000,True,False,False,False,False,False,False,True,295
+667,45152084,Looking For A Prime Location Flat In North Nazimabad - Block M,2,2,111,11000000,True,False,False,False,False,False,False,True,301
+668,45152675,Luxury Flat for Sale at Sohni Golf View Apartments,3,3,172,19900000,True,False,False,False,False,False,False,True,303
+669,44569783,MAIN KHAYABAN-E-GHAZI Bungalow Facing Ittehad Commercial Apartment For Sale,3,3,200,34000000,True,False,False,False,False,False,False,True,304
+670,44569551,Main Khayaban-e-ghazi Bungalow Facing Ittehad Commercial Apartment For Sale,3,3,200,34000000,True,False,False,False,False,False,False,True,305
+671,44569841,Main Khayaban-e-ghazi Bungalow Facing Ittehad Commercial Apartment For Sale,3,3,200,34000000,True,False,False,False,False,False,False,True,305
+672,44569895,Main Khayaban-e-ghazi Bungalow Facing Ittehad Commercial Apartment For Sale,3,3,200,34000000,True,False,False,False,False,False,False,True,305
+673,45154356,New Portion For Sale,4,4,200,45000000,False,False,False,False,True,False,False,True,314
+674,45154222,New Portion For Sale,3,3,189,36000000,False,False,False,False,True,False,False,True,314
+675,45154332,New Portion For Sale,4,4,200,47500000,False,False,False,False,True,False,False,True,314
+676,45154375,New Portion For Sale,4,4,200,46500000,False,False,True,False,False,False,False,True,314
+677,45154236,New Portion For Sale,3,3,189,37500000,False,False,False,False,True,False,False,True,314
+678,45154966,North town residency phase 1 2bed lounge,2,2,70,3500000,True,False,False,False,False,False,False,True,325
+679,45152894,Outclass Renovated Flat For Sale in Big Bukhari,2,2,106,11000000,True,False,False,False,False,False,False,True,327
+680,44937926,Park facing 300 yards Ground Portion For Sale in Gulistan e Johar Blk14,3,3,300,19500000,False,False,True,False,False,False,False,True,331
+681,42466836,Perfect 9000 Square Feet House In Dha Phase 8 For Sale,6,6,1000,195000000,False,True,False,False,False,False,False,True,332
+682,45152268,Phase 6 1000 yards Owner Built Excellent Bungalow For Sale Dha karachi,6,6,1000,205000000,False,True,False,False,False,False,False,True,333
+683,45154963,Portion 140 gaz withbsub lease,2,2,140,8500000,False,False,False,False,True,False,False,True,334
+684,44413149,Portion For Sale,3,3,240,25000000,False,False,True,False,False,False,False,True,335
+685,44917633,Precinct 35 Sportscity villas available for sale in bahria town karachi low rate good location,4,5,350,21200000,False,True,False,False,False,False,False,True,336
+686,45152085,"Prime Location 1500 Square Feet Flat available for sale in North Nazimabad - Block H, Karachi",3,3,167,18000000,True,False,False,False,False,False,False,True,337
+687,45152093,Prime Location 240 Square Yards House For sale In Naya Nazimabad - Block C Karachi,6,6,240,46000000,False,True,False,False,False,False,False,True,338
+688,45152079,Prime Location 600 Square Yards House For sale In North Nazimabad,6,6,600,65000000,False,True,False,False,False,False,False,True,339
+689,45152083,Prime Location 600 Square Yards House In North Nazimabad - Block I Is Available,7,4,600,90000000,False,True,False,False,False,False,False,True,340
+690,45152074,Prime Location 950 Square Feet Flat In North Nazimabad - Block L,2,2,106,8000000,True,False,False,False,False,False,False,True,341
+691,45152082,Prime Location A Centrally Located House Is Available For sale In Karachi,7,8,233,57500000,False,True,False,False,False,False,False,True,342
+692,45152071,Prime Location Flat For sale In North Nazimabad - Block M Karachi,3,3,161,14000000,True,False,False,False,False,False,False,True,343
+693,45152073,Prime Location Flat Of 1350 Square Feet Is Available For sale,3,3,150,10200000,True,False,False,False,False,False,False,True,344
+694,45152077,Prime Location House Available For sale In North Nazimabad - Block L,7,6,200,50000000,False,True,False,False,False,False,False,True,345
+695,45152081,Prime Location North Nazimabad - Block D House Sized 200 Square Yards For sale,6,6,200,40000000,False,True,False,False,False,False,False,True,346
+696,43675967,Proper Two Unit Bungalow For Sale,6,6,500,110000000,False,True,False,False,False,False,False,True,347
+697,45152801,Ready To Move Luxury 3 Bedrooms Precinct 27 Villa Is Available For Sale In Bahria Town Karachi,3,3,235,17000000,False,True,False,False,False,False,False,True,354
+698,45152806,Ready To Move Luxury 3 Bedrooms Precinct 31 Villa Is Available For Sale In Bahria Town Karachi,3,3,235,15600000,False,True,False,False,False,False,False,True,355
+699,40601944,Reserve A House Now In Askari 5 - Sector J,5,5,375,62000000,False,True,False,False,False,False,False,True,356
+700,41780553,Rufi Green Land One Unit Bungalow For Sale,6,8,200,30000000,False,True,False,False,False,False,False,True,358
+701,44766140,Safari Omega View Flat For Sale,2,2,72,7000000,True,False,False,False,False,False,False,True,360
+702,45152668,Saima Bridge View,3,4,222,17200000,True,False,False,False,False,False,False,True,362
+703,45152070,Single Storey 240 Square Yards House For sale In Shadman Town - Sector-14/B Karachi,3,3,240,35000000,False,True,False,False,False,False,False,True,373
+704,43675337,Slightly Used 3 Bedrooms Apartment For Sale,3,3,122,16000000,True,False,False,False,False,False,False,True,374
+705,45152671,Slightly Used Bungalow For Sale in Phase 4,5,5,500,135000000,False,True,False,False,False,False,False,True,375
+706,45041985,Spacious Family Home in a Desirable Neighborhood,4,4,80,14000000,False,True,False,False,False,False,False,True,376
+707,45152076,Stunning and affordable Prime Location House available for sale in North Nazimabad - Block J,6,6,200,50000000,False,True,False,False,False,False,False,True,380
+708,45031579,"The Most Latest Design, Hybrid Frame Structure, Never Before, Beautiful House In Falcon Malir",5,6,500,117500000,False,True,False,False,False,False,False,True,382
+709,39014099,Town House For Sale In Clifton Block 8,4,5,350,87500000,False,True,False,False,False,False,False,True,385
+710,44305680,Town House For Sale Old Construction,8,6,200,55000000,False,True,False,False,False,False,False,True,386
+711,45152069,Tripple Storey 120 Square Yards House For sale In Shadman Town - Sector-14/B Karachi,6,6,120,24000000,False,True,False,False,False,False,False,True,388
+712,44791389,Upper Floor 4 Bedrooms West Open Apartment For Sale,4,5,417,82500000,True,False,False,False,False,False,False,True,392
+713,45152764,"We Are Offering 2250 Square ft 3 Bedrooms Luxury Apartment In Bahria Town, Karachi",3,3,250,19500000,True,False,False,False,False,False,False,True,393
+714,45152748,"We Are Offering 950 Square Ft 2 Bedrooms Luxury Apartment Is Available For Sale In Bahria Town, Karachi",2,2,106,8500000,True,False,False,False,False,False,False,True,394
+715,45152708,We Are Offering Ready To Move Luxury 4 Bedrooms Bahria Sports City Villa Is Available For Sale In Bahria Town Karachi,4,4,350,21500000,False,True,False,False,False,False,False,True,397
+716,45152732,We Are Offering This 5 Bedroom Luxurious Paradise Villas Have 4700 Sq Feet Covered Area And Consist Of All Modern Day Facilities,5,5,500,47000000,False,True,False,False,False,False,False,True,398
+717,45152908,We Have 125 Sq. Yards 3 Bedrooms Modern Style Luxurious Ali Block Villa For Sale Is Available In Bahria Town Karachi,3,3,125,15000000,False,True,False,False,False,False,False,True,399
+718,45152903,We Have Ready To Move Luxury 3 Bedrooms Precinct 11B Villa Is Available For Sale In Bahria Town Karachi,3,3,125,15000000,False,True,False,False,False,False,False,True,400
+719,40848414,Well Maintain 500 Yard House For Sale In Dha Phase 7,5,6,500,105000000,False,True,False,False,False,False,False,True,401
+720,44276437,West Open 03 Bed Dd Flat For Sale In Goldfront Apartment,3,3,167,18500000,True,False,False,False,False,False,False,True,403
+721,45155009,brand new ground floor portion,3,3,240,23000000,False,False,False,False,True,False,False,True,405
+722,44456601,north Karachi sector 3 new house for sale,6,4,100,11000000,False,True,False,False,False,False,False,True,407

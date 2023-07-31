@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/fontawesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+
+    <title>Search Results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+    </script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+    </script>
+    <!-- CUSTOM CSS -->
+  <link href="style.css" rel="stylesheet">
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <!-- <a href="index.html" class="logo">
+            </a> -->
+
+            <a href="index.html" class="logo">
+              <img src="/img/Logo.png" alt=""> 
+            </a>
+
+
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html" class=""><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+              <li><a href="nearbyproperties.html"><i class="fa fa-map-marker" aria-hidden="true"></i>Nearby Properties</a></li>
+              <li><a href="about.html"><i class="fa fa-check"></i>About Us</a></li>
+              <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Us</a></li> 
+              <!-- <li><div class="main-white-button"><a href="#"><i class="fa fa-plus"></i> Add Your Listing</a></div></li>  -->
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+<style>
+
+table>
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+
+  #map {
+  height: 80%;
+  width: 100%;
+}
+  table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+td {
+  border: solid 1px #ff8811;
+  border-style: none solid solid solid !important;
+  padding: 10px;
+}
+tr:first-child td:first-child { border-top-left-radius: 12px; }
+tr:first-child td:last-child { border-top-right-radius: 12px; }
+
+tr:last-child td:first-child { border-bottom-left-radius: 12px; }
+tr:last-child td:last-child { border-bottom-right-radius: 12px; }
+
+tr:first-child td { border-top-style: solid; }
+tr td:first-child { border-left-style: solid; }
+  
+</style>
+<script>
+  let map;
+  var infoobj = [];
+  var centercords = {lat: 24.923492431641,lng: 67.081733703613}
+  const iconBase =
+    "img/marker.png";
+var icons = {
+    property: {
+      icon: iconBase,
+    },
+  };
+  onload = fetch("Property.csv").then(res =>{
+  return res.text()
+ }).then(data =>{
+    let result = data.split(/\r?\n|\r/).map
+    (e =>{
+      return e.split(";");
+    })
+    
+ })
+
+
+function addmarker(){
+  for (var i = 0; i < markeronmap.length;i++){
+    var info = '<h6>'+markeronmap[i].Area+'</h6>'+'<img src ='+markeronmap[i].image+' style="width:200px;">'+'<p>'+markeronmap[i].Name+'</p>'+'<p>'+markeronmap[i].Price+'</p><br><button class="btn" style=" width:100%;margin-bottom:3px;color: #ffffff; background-color:#ff8811">View Details</button>';
+    
+    const marker = new google.maps.Marker({
+      position: markeronmap[i].LatLng[0],
+      icon: icons[markeronmap[i].type].icon,
+      map: map
+    });
+    const  infowindow= new google.maps.InfoWindow({
+      content: info,
+    });
+    marker.addListener('click',function(){
+      closeOtherinfo();
+      infowindow.open(marker.get('map'),marker);
+      infoobj[0]= infowindow;
+      
+    });
+  }
+}
+function closeOtherinfo(){
+    if (infoobj.length > 0){
+    infoobj[0].set("marker",null);
+    infoobj[0].close();
+  infoobj[0].length = 0; 
+}
+ }
+
+ 
+var markeronmap = [
+   
+{     Area: "Gulshan-e-iqbal Block 1",
+      Name: "AL-Rehman Square Apartments",
+      Price: 440000000,
+      image: "img/home-1.jpeg",
+      LatLng: [{
+        lat:24.923492431641,
+        // parseInt(result[225][8])
+        lng:67.081733703613,
+      }],
+      type: 'property'
+    },
+    {
+      Area: "Gulshan-e-iqbal Block 4",
+      Name:"Harmain Royal Residency",
+      Price: 84000000,
+      image: "img/home-13.jpeg",
+      LatLng: [{
+        lat:24.939604,
+        lng:67.095909 ,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 10",
+      Name:"AL-Rauf Residency",
+      Price: 20000000,
+      image: "img/home-5.jpeg",
+      LatLng: [{
+        lat:24.911726,
+        lng:67.098014,
+      }],
+      type: 'property'
+    },
+    {
+      Area: "Gulshan-e-iqbal Block 9",
+      Name:"Saima Park View",
+      Price: 85000000,
+      image: "img/home-7.jpeg",
+      LatLng: [{
+        lat:24.910435,
+        lng:67.090523,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 17",
+      Name:"Fatima society",
+      Price: 60000000,
+      image: "img/home-14.jpeg",
+      LatLng: [{
+        lat:24.899565,
+        lng:67.081322,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 8",
+      Name:"Town Residency",
+      Price: 120000000,
+      image: "img/home-7.jpeg",
+      LatLng: [{
+        lat:24.90628,
+        lng:67.086254,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 16",
+      Name:"Al-Hamid Society",
+      Price: 250000000,
+      image: "img/home-6.jpeg",
+      LatLng: [{
+        lat:24.903565,
+        lng:67.081525,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 9",
+      Name:"Saima Residency",
+      Price: 55000000,
+      image: "img/home-11.jpeg",
+      LatLng: [{
+        lat:24.910435,
+        lng:67.090523,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 13",
+      Name:"Rehman House",
+      Price: 75000000,
+      image: "img/home-12.png",
+      LatLng: [{
+        lat:24.908304,
+        lng:67.080631,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 13D",
+      Name:"town society",
+      Price: 150000000,
+      image: "img/home-14.jpeg",
+      LatLng: [{
+        lat:24.91567,
+        lng:67.083628,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 14",
+      Name:"House",
+      Price: 39000000,
+      image: "img/home-9.jpeg",
+      LatLng: [{
+        lat:24.896947,
+        lng:67.071962,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 4A",
+      Name:"Almirah Residency",
+      Price: 40000000,
+      image: "img/home-10.png",
+      LatLng: [{
+        lat:24.939604,
+        lng:67.09591,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 19",
+      Name:"Park city",
+      Price: 13000000,
+      image: "img/home-3.jpeg",
+      LatLng: [{
+        lat:24.907068,
+        lng:67.094915,
+      }],
+      type: 'property'
+    },{
+      Area: "Gulshan-e-iqbal Block 13D-2",
+      Name:"Usmania Flat",
+      Price: 6000000,
+      image: "img/home-8.jpeg",
+      LatLng: [{
+        lat:24.908308,
+        lng:67.07207,
+      }],
+      type: 'property'
+    }
+    
+  ];
+ 
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: centercords,
+    zoom: 13.5,
+  });
+
+addmarker();
+ 
+}
+window.initMap = initMap;
+
+ 
+</script>
+  <div class="listing-page">
+    <div class="container-fluid">
+      <div class="row" >
+        <div class="col-md-6"> <h3>Search Results</h3></div>
+        <div class="col-md-6"  >
+        <div class="input-group rounded search-bar" style="margin-left: 324px;">
+
+          <input type="search" class="form-control rounded" id="searchinput" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+          <button type="submit" class="btn" style="border-color: #ff8811;"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+      </div>
+      <br>
+      <div class="row" style="height: 700px;">
+        <div id="map"></div>
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer
+      ></script>
+      </div>
+      <div>
+
+      </div>
+      <section class="recommended-products">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Recommended Properties</h2>
+              <div class="owl-carousel owl-theme">
+                <div class="item">                  
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/home-5.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AL-Rehman Square Apartments with Fully Maintained for Sale</h4>
+                      <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>
+                      <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="item">                  
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/home-10.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Double Storey 6 beds House Near Farooq-e-azam Masjid For Sale</h4>
+                      <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Bufferzone Block 6, Karachi.</p>
+                      <a href="#" class="btn btn-primary">Price PKR 8 Crore</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="item">                  
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/home-3.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Prime Location 270 Sq Yard 2nd Floor Portion With Roof 60 Fit Road Available For Sale</h4>
+                      <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulshan-e-Iqbal - Block 1,Karachi, Sindh</p>
+                      <a href="#" class="btn btn-primary">Price PKR 3.55 Crore</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="item">                  
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/home-11.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Flat For Grabs In 1350 Square Feet Karachi for Sale</h4>
+                      <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulshan-e-Iqbal - Block 4, Karachi, Sindh</p>
+                      <a href="#" class="btn btn-primary">Price PKR 1.98 Crore</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="item">                  
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/home-11.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>A Spacious Prime Location 120 Square Yards Lower Portion</h4>
+                      <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Block R,Paradise, Karachi, Sindh</p>
+                      <a href="#" class="btn btn-primary">Price PKR 87 Lakh</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="item">                  
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/home-12.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>400 Sq Yard Fully Maintained</h4>
+                      <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i> Block L,Saffora, Karachi, Sindh</p>
+                      <a href="#" class="btn btn-primary">Price PKR 1.35 Crore</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="item">                  
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/home-13.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Beautiful House Available For Sale</h4>
+                      <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 11, Karachi.</p>
+                      <a href="#" class="btn btn-primary">Price PKR 3.25 Crore</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="item">                  
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="img/home-14.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Double Story House for Sale</h4>
+                      <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>
+                      <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <div class="app-banner">
+    <div class="container">
+      <div class="box">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mini-box">
+              <!-- <div class="mini-box"> -->
+              <h4>Get the <strong>Property Guru</strong>  app</h3>
+              <!-- </div> -->
+              <h4>Download our app to get quick solutions to property-related problems.</h4>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="phone-app">
+              <img src="img/my-app.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 mt-2">
+            <div class="scan">
+              <div class="playstore">
+                <img src="img/play-store.png" alt="">
+              </div>
+              <h4>Scan the QR Code</h4>
+              <div class="qr-img">
+                <img src="img/qr_default.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- <div class="col-1"></div> -->
+        <div class="col-md-3">
+          <div class="footer-nav">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">Homes</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="contact-us">
+            <h4>Our Address</h4>
+            <ul>
+              <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                R-245, KN-Gohar Green City, Karachi Pakistan.
+              </li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i>(+92) 314 2309877</li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i>propertyguru@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="social-icons">
+            <h4>Get Connected</h4>
+            <div class="icons">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-1"></div> -->
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+  $('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:30,
+  responsiveClass:true,
+  responsive:{
+  0:{
+  items:1,
+  nav:true
+  },
+  600:{
+  items:3,
+  nav:true
+  },
+  1000:{
+  items:4,
+  nav:true,
+  loop:true
+  }
+  }
+  })
+  </script>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

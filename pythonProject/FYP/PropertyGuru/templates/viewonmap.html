@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/fontawesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <title>Property Guru</title>
+    <link rel="icon" type="image/x-icon" href="https://www.iconsdb.com/icons/preview/orange/house-xxl.png" >
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-plot-listing.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css'%}">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+    </script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB12RPoQsTv-ZGF7DeGiaqoZ7w-OSu7RYs"></script>
+
+    <!-- CUSTOM CSS -->
+    <link href="{% static 'style.css'%}" rel="stylesheet">
+
+  </head>
+
+<style>
+button {
+        display: inline-block;
+        display: inline-block;
+        background-color: purple;
+        padding: 5px;
+        width: 200px;
+        color: #ffffff;
+        text-align: center;
+        border: 4px double #cccccc;
+        border-radius: 80px;
+        font-size: 14px;
+        cursor: pointer; 
+        margin: 2px;
+      }
+</style>
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <!-- <a href="index.html" class="logo">
+              </a> -->
+              <a href="{% url 'index' %}" class="logo">
+                <img src="{% static 'img/Logo.png' %}" alt="">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <ul class="nav">
+                <li><a href="{% url 'index' %}" class=""><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <form method="post" action="{% url 'nearbyproperties' %}" >
+                  {% csrf_token %}
+                  <input type="hidden" name="areaname" id="areaname" value="">
+                <li><a href="#" onclick="submitForm()" ><i class="fa fa-map-marker" aria-hidden="true"></i>Nearby Properties</a></li>
+                </form>
+                <li><a href="{% url 'about' %}"><i class="fa fa-check"></i>About Us</a></li>
+                <li><a href="{% url 'contact' %}"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Us</a></li>
+              </ul>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+<script>
+ navigator.geolocation.getCurrentPosition(function(position) {
+  var lat = position.coords.latitude;
+  var lng = position.coords.longitude;
+
+  // Use reverse geocoding to determine area name
+  var geocoder = new google.maps.Geocoder();
+  var latlng = new google.maps.LatLng(lat, lng);
+  geocoder.geocode({'latLng': latlng}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      if (results[0]) {
+        var areaName = "";
+        for (var i = 0; i < results[0].address_components.length; i++) {
+          var component = results[0].address_components[i];
+          if (component.types.indexOf("sublocality") != -1 || component.types.indexOf("neighborhood") != -1) {
+            areaName = component.long_name;
+            break;
+          }
+        }
+
+        var area = areaName;
+        console.log(area);
+        document.getElementById("areaname").value = area;
+      }
+    }
+  });
+});
+var form = document.querySelector('form');
+function submitForm() {
+    form.submit();
+  }
+</script>
+    <!-- ***** Header Area End ***** -->
+    <main class="mt-5 pt-5">      
+      <section class="nearbyproperties text-center tb-sc">
+        <!-- <section class="tb-sc"> -->        
+          <div class="container">
+              {{ property.address }}
+                <!--Google map-->
+                <div id="map" style="height: 500px; width: 100%;"></div>
+                <!--Google Maps-->
+
+        <script>
+ var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 10,
+  center: {lat: 24.8607, lng: 67.0011}
+});
+var infowindow = new google.maps.InfoWindow();
+var data = {{ json_data|safe }}
+map.data.addGeoJson(data);
+map.data.addListener('click', function(event) {
+    var image_src = event.feature.getProperty('image_src');
+    var location = event.feature.getProperty('location');
+    var price = event.feature.getProperty('price');
+    var area_sq = event.feature.getProperty('area_sq');
+    var purpose = event.feature.getProperty('purpose');
+    var property_type = event.feature.getProperty('property_type');
+    var propertyid = event.feature.getProperty('Property_id');
+
+    infowindow.setContent('<div><img src=" ' + image_src +' " width="100" height="200"> <br><br><strong>LOCATION: </strong>' + location +
+    '<br><strong> AREA: </strong>' + area_sq +
+    '<br><strong>PRICE: </strong>' + price +
+    '<br><strong>PURPOSE: </strong>' + purpose +
+    '<br><strong>PROPERTY TYPE: </strong>' + property_type +
+    '<br> <a href="{% url 'propertydetails' property_id=property.Property_id %}"><button>Property Details</button></a></div>');
+    infowindow.setPosition(event.feature.getGeometry().get());
+    infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
+    infowindow.open(map);
+});
+</script>
+
+             </div>
+          </div>
+        <br><br>
+
+        <!-- </section> -->
+
+        
+      </section>
+    </main>
+    <br><br>
+    <div class="app-banner">
+      <div class="container">
+        <div class="box">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mini-box">
+                <!-- <div class="mini-box"> -->
+                <h4>Get the <strong>Property Guru</strong>  app</h4>
+                <!-- </div> -->
+                <h4>Download our app to get quick solutions to property-related problems.</h4>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="phone-app">
+                <img src="{% static 'img/my-app.png'%}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3 mt-2">
+              <div class="scan">
+                <div class="playstore">
+                  <img src="{% static 'img/play-store.png'%}" alt="">
+                </div>
+                <h4>Scan the QR Code</h4>
+                <div class="qr-img">
+                  <img src="{% static 'img/qr_default.png'%}" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- <div class="col-1"></div> -->
+          <div class="col-md-3">
+            <div class="footer-nav">
+              <h4>PropertyGuru</h4>
+              <ul>
+               <li><a href="{% url 'index' %}">Homes</a></li>
+                  <li><a href="{% url 'about'%}">About Us</a></li>
+                  <li><a href="{% url 'contact'%}">Contact Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="contact-us">
+              <h4>Our Address</h4>
+              <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                  R-245, KN-Gohar Green City, Karachi Pakistan.
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>(+92) 314 2309877</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>propertyguru@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="social-icons">
+              <h4>Get Connected</h4>
+              <div class="icons">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook"></i>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-1"></div> -->
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    responsiveClass:true,
+    responsive:{
+    0:{
+    items:1,
+    nav:true
+    },
+    600:{
+    items:3,
+    nav:true
+    },
+    1000:{
+    items:4,
+    nav:true,
+    loop:true
+    }
+    }
+    })
+    </script>
+
+    
+    <!-- Scripts -->
+    <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js'%}"></script>
+    <script src="{% static 'assets/js/animation.js'%}"></script>
+    <script src="{% static 'assets/js/imagesloaded.js'%}"></script>
+    <script src="{% static 'assets/js/custom.js'%}"></script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/fontawesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <title>PropertyGuru</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-plot-listing.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css'%}">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+    </script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7Y7wvQp8YsIc1sLgg5zbsu_JQXkhBZWo"></script>
+
+    <!-- CUSTOM CSS -->
+    <link href="{% static 'style.css'%}" rel="stylesheet">
+
+  </head>
+
+<style>
+button {
+        display: inline-block;
+        display: inline-block;
+        background-color: purple;
+        padding: 5px;
+        width: 200px;
+        color: #ffffff;
+        text-align: center;
+        border: 4px double #cccccc;
+        border-radius: 80px;
+        font-size: 14px;
+        cursor: pointer; 
+        margin: 2px;
+      }
+</style>
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <!-- <a href="index.html" class="logo">
+              </a> -->
+              <a href="{% url 'index' %}" class="logo">
+                <img src="{% static 'img/Logo.png' %}" alt="">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <ul class="nav">
+                <li><a href="{% url 'index' %}" class=""><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="nearbyproperties.html"><i class="fa fa-map-marker" aria-hidden="true"></i>Nearby Properties</a></li>
+                <li><a href="{% url 'about' %}"><i class="fa fa-check"></i>About Us</a></li>
+                <li><a href="{% url 'contact' %}"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Us</a></li>
+              </ul>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <main class="mt-5 pt-5">      
+      <section class="nearbyproperties text-center tb-sc">
+        <!-- <section class="tb-sc"> -->        
+          <div class="container">
+            <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+
+              <li class="nav-item" role="presentation">
+                <form method="post" action="{% url 'nearbyproperties_purchase' %}" >
+                  {% csrf_token %}
+                  <input type="hidden" name="areaname" id="areaname3" value="">
+            <button class="nav-link btn-p mx-1" id="pills-profile-tab"  type="submit" role="tab" aria-controls="pills-profile" style="background-color:black">
+              <a  style="color:white;text-decoration:none;">Purchase</a></button>
+                </form>
+              </li>
+              <li class="nav-item" role="presentation">
+                <form method="post" action="{% url 'nearbyproperties_rent' %}" >
+                  {% csrf_token %}
+                  <input type="hidden" name="areaname" id="areaname2" value="">
+
+               <button type="submit" class="nav-link btn-r mx-1" id="pills-contact-tab"  type="button" role="tab" aria-controls="pills-contact" style="background-color:black" >
+                 <a  style="color:white;text-decoration:none;">Rent</a></button>
+                </form>
+              </li>
+                 <li class="nav-item" role="presentation">
+                    <form method="post" action="{% url 'nearbyproperties' %}" >
+                  {% csrf_token %}
+                  <input type="hidden" name="areaname" id="areaname" value="">
+                        <button type="submit" class="nav-link active btn-all mx-1" id="pills-home-tab" type="button" role="tab"  style="background-color:black" aria-controls="pills-home" >
+                          <a style="color:white;text-decoration:none;"> All</a></button>
+                    </form>
+                 </li>
+            </ul>
+              <script>
+ navigator.geolocation.getCurrentPosition(function(position) {
+  var lat = position.coords.latitude;
+  var lng = position.coords.longitude;
+
+  // Use reverse geocoding to determine area name
+  var geocoder = new google.maps.Geocoder();
+  var latlng = new google.maps.LatLng(lat, lng);
+  geocoder.geocode({'latLng': latlng}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      if (results[0]) {
+        var areaName = "";
+        for (var i = 0; i < results[0].address_components.length; i++) {
+          var component = results[0].address_components[i];
+          if (component.types.indexOf("sublocality") != -1 || component.types.indexOf("neighborhood") != -1) {
+            areaName = component.long_name;
+            break;
+          }
+        }
+
+        var area = areaName;
+        document.getElementById("areaname").value = area;
+         document.getElementById("areaname2").value = area;
+          document.getElementById("areaname3").value = area;
+          console.log(area)
+      }
+    }
+  });
+});
+</script>
+
+              
+                <!--Google map-->
+                <div id="map" style="height: 500px; width: 100%;"></div>
+                <!--Google Maps-->
+              </div>    
+
+  <script>
+ var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 10,
+  center: {lat: 24.8607, lng: 67.0011}
+});
+var infowindow = new google.maps.InfoWindow();
+var data = {"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"location": "Brand New Flat Available For Sale At Saima Royal Residency", "area_sq": "122", "price": "15000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213246704-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.08804049999999, 24.9278575]}}, {"type": "Feature", "properties": {"location": "3600 Sq. Ft 04b Ed Dd Flat For Sale In Tulip Tower", "area_sq": "400", "price": "27000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/206339082-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [-83.519952, 35.7156753]}}, {"type": "Feature", "properties": {"location": "3 Bed Dd Flat For Sale In Sohni Golf View Apartment", "area_sq": "194", "price": "16000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/206339554-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1786442, 24.9207358]}}, {"type": "Feature", "properties": {"location": "02 Bed Lounge Flat For Sale In Falaknaz Presidency", "area_sq": "83", "price": "6600000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/206339095-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1731973, 24.9265742]}}, {"type": "Feature", "properties": {"location": "Town House For Sale In Clifton Block 8", "area_sq": "350", "price": "87500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/213139321-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0390123, 24.8301985]}}, {"type": "Feature", "properties": {"location": "Brand New 2 Bed Dd Apartment Available For Sale At Saima Royal Residency", "area_sq": "133", "price": "16000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213246943-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.08804049999999, 24.9278575]}}, {"type": "Feature", "properties": {"location": "In Askari 5 - Sector J House For sale Sized 375 Square Yards", "area_sq": "375", "price": "62000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/212807709-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.200441, 24.9612938]}}, {"type": "Feature", "properties": {"location": "Reserve A House Now In Askari 5 - Sector J", "area_sq": "375", "price": "62000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/212807693-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.200441, 24.9612938]}}, {"type": "Feature", "properties": {"location": "2nd Floor Portion With Roof Is Available On Booking", "area_sq": "240", "price": "30000000", "purpose": "For Sale", "property_type": "Upper Portion", "image_src": "https://media.zameen.com/thumbnails/206008974-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0617376, 24.8743351]}}, {"type": "Feature", "properties": {"location": "Well Maintain 500 Yard House For Sale In Dha Phase 7", "area_sq": "500", "price": "105000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/213054022-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [74.49359129999999, 31.4647119]}}, {"type": "Feature", "properties": {"location": "Dha Phase 7 Outclass Designer House 1000 Years Pure Owner Famous Architect Design Pool", "area_sq": "1000", "price": "260000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/213139864-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [74.49359129999999, 31.4647119]}}, {"type": "Feature", "properties": {"location": "Buying A Flat In Karachi?", "area_sq": "78", "price": "8000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213246688-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "375 Square Yards House Is Available For sale In Askari 5 - Sector J", "area_sq": "375", "price": "69500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/184646213-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.200441, 24.9612938]}}, {"type": "Feature", "properties": {"location": "3 Side Corner House For Sale In Bufferzone 15-a 4", "area_sq": "120", "price": "20500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/212857837-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0678065, 24.9570898]}}, {"type": "Feature", "properties": {"location": "Perfect 9000 Square Feet House In Dha Phase 8 For Sale", "area_sq": "1000", "price": "195000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/186797162-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [74.4496317, 31.4899112]}}, {"type": "Feature", "properties": {"location": "3 Bed Dd Flat For Sale In Rafi Premier Residency", "area_sq": "194", "price": "18000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205660968-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.16341229999999, 24.9405184]}}, {"type": "Feature", "properties": {"location": "4 Bed Drawing Dining Apartment Gulshan Iqbal Block 13 a Main Hasan Square", "area_sq": "194", "price": "16500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/212452098-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0728955, 24.9025174]}}, {"type": "Feature", "properties": {"location": "2 Bed Flat For Sale In Emaar Pearl Tower", "area_sq": "389", "price": "150000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205582126-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0714284, 24.7491621]}}, {"type": "Feature", "properties": {"location": "2000 Square Feet Flat For Sale In Garden East Karachi In Only Rs. 35,000,000", "area_sq": "222", "price": "35000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/206755422-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.02905969999999, 24.8808713]}}, {"type": "Feature", "properties": {"location": "A Perfect House Awaits You In Gulistan-e-Jauhar - Block 14 Karachi", "area_sq": "600", "price": "75000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/206204649-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.12837750000001, 24.9202211]}}, {"type": "Feature", "properties": {"location": "Leased Flat For Sale in Scheme,33& Kaneez Fatima Society Commercial Row", "area_sq": "200", "price": "14000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/207003597-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.13508019999999, 24.9584079]}}, {"type": "Feature", "properties": {"location": "2 Bed Dd Flat For Sale In Saima Presidency", "area_sq": "122", "price": "14500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205660803-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.15837739999999, 24.9375045]}}, {"type": "Feature", "properties": {"location": "Apartment For Sale Shahra E Faisal Near Aisha Bawani", "area_sq": "189", "price": "22500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.1116591, 24.8817312]}}, {"type": "Feature", "properties": {"location": "2 Bed DD Apartment For Sale In Gulzar E Hijri Scheme 33, Karachi,", "area_sq": "100", "price": "5000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/207562388-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1536993, 24.9705122]}}, {"type": "Feature", "properties": {"location": "A beautiful ready to move house available in the peaceful society of Malir", "area_sq": "120", "price": "25000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/205943013-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.21626189999999, 24.8937334]}}, {"type": "Feature", "properties": {"location": "Corner 2 Bed Apartment For Sale In Aman Tower", "area_sq": "83", "price": "3700000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/207560493-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1249424, 24.8221639]}}, {"type": "Feature", "properties": {"location": "Get Your Hands On Flat In Karachi Best Area", "area_sq": "250", "price": "36000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205676139-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Idyllic Prime Location House Available In Navy Housing Scheme Karsaz - Phase 2 For sale", "area_sq": "500", "price": "230000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/213140550-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.039757, 24.824019]}}, {"type": "Feature", "properties": {"location": "Buy East Open 120 Square Yards House At Highly Affordable Price", "area_sq": "120", "price": "11900000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/205118612-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [151.272594, -33.8753468]}}, {"type": "Feature", "properties": {"location": "3 Bed Dd Flat For Sale In Akbar Residency Gulistan-e-jauhar Block 15 C-237", "area_sq": "167", "price": "16000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205661409-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1220757, 24.9178685]}}, {"type": "Feature", "properties": {"location": "630 Square Feet Flat In Stunning North Karachi Is Available For sale", "area_sq": "70", "price": "3500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/206659963-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0643315, 24.9728707]}}, {"type": "Feature", "properties": {"location": "240 Yards Portion For Sale In Gulshan-e-iqbal - Block/1", "area_sq": "240", "price": "26000000", "purpose": "For Sale", "property_type": "Upper Portion", "image_src": "https://media.zameen.com/thumbnails/207561101-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0814596, 24.9203501]}}, {"type": "Feature", "properties": {"location": "In Emaar Pearl Towers Flat Sized 1634 Square Feet For Sale", "area_sq": "182", "price": "44000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205583531-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0714284, 24.7491621]}}, {"type": "Feature", "properties": {"location": "2 Bed Flat For Sale In Emaar Pearl Tower", "area_sq": "181", "price": "60000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205583804-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0714284, 24.7491621]}}, {"type": "Feature", "properties": {"location": "Lower Portion For Grabs In 2700 Square Feet Karachi", "area_sq": "300", "price": "27000000", "purpose": "For Sale", "property_type": "Lower Portion", "image_src": "https://media.zameen.com/thumbnails/205676786-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "2 Bed Dd Flat For Sale In Noman Residencia", "area_sq": "122", "price": "9800000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205661592-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.14726449999999, 24.9569291]}}, {"type": "Feature", "properties": {"location": "2 Bed Apartment For Sale In Emaar Pearl Towers", "area_sq": "182", "price": "57500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205585821-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0714284, 24.7491621]}}, {"type": "Feature", "properties": {"location": "Defence Phase Vi, 500 Yards Bungalow For Sale 2 Plus 3 Bedroom", "area_sq": "500", "price": "107500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/206689411-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.06781579999999, 24.812946]}}, {"type": "Feature", "properties": {"location": "Defence Phase VI, 500 Yards, 2 Unit Bungalow for Sale", "area_sq": "500", "price": "125000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.06781579999999, 24.812946]}}, {"type": "Feature", "properties": {"location": "Defence Phase Viii, 1000 Yards, Brand New Bungalow 2 Plus 4 Bedroom", "area_sq": "1000", "price": "420000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [-0.1707334, 5.6630047]}}, {"type": "Feature", "properties": {"location": "Defence Phase Viii 120 Yards Brand New Bungalow 1 Plus 2 Bedroom", "area_sq": "120", "price": "58000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [-0.1707517, 5.6634772]}}, {"type": "Feature", "properties": {"location": "A Perfect House Awaits You In Shaheed Millat Road Shaheed Millat Road", "area_sq": "302", "price": "90000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/206756152-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0845502, 24.9153631]}}, {"type": "Feature", "properties": {"location": "02 Bed Dd Flat For Sale In Snober Twin Tower", "area_sq": "133", "price": "8500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/206339770-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1635162, 24.9482534]}}, {"type": "Feature", "properties": {"location": "350 Square Yards Corner Portion For Sale In Gulistan-e-Jauhor Block-14", "area_sq": "350", "price": "26000000", "purpose": "For Sale", "property_type": "Lower Portion", "image_src": "https://media.zameen.com/thumbnails/207561218-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1343848, 24.9204194]}}, {"type": "Feature", "properties": {"location": "north Karachi sector 3 new house for sale", "area_sq": "100", "price": "11000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/207469092-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0643315, 24.9728707]}}, {"type": "Feature", "properties": {"location": "2 Bed Dd Apartment For Sale In Dha Phase 2 4th Floor Tail Flooring Good Loction Rezenabale Demand", "area_sq": "106", "price": "6700000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213124602-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0606205, 24.8335102]}}, {"type": "Feature", "properties": {"location": "Bungalow For Sell On Investor Rate In Gulistan E Johar Block 14", "area_sq": "600", "price": "75000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/206306132-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.12837750000001, 24.9202211]}}, {"type": "Feature", "properties": {"location": "Main Khayaban-e-ghazi Bungalow Facing Ittehad Commercial Apartment For Sale", "area_sq": "200", "price": "34000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205612484-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0728233, 24.8010579]}}, {"type": "Feature", "properties": {"location": "MAIN KHAYABAN-E-GHAZI Bungalow Facing Ittehad Commercial Apartment For Sale", "area_sq": "200", "price": "34000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205611924-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0728233, 24.8010579]}}, {"type": "Feature", "properties": {"location": "Main Khayaban-e-ghazi Bungalow Facing Ittehad Commercial Apartment For Sale", "area_sq": "200", "price": "34000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205612182-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0728233, 24.8010579]}}, {"type": "Feature", "properties": {"location": "Main Khayaban-e-ghazi Bungalow Facing Ittehad Commercial Apartment For Sale", "area_sq": "200", "price": "34000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/205612384-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0728233, 24.8010579]}}, {"type": "Feature", "properties": {"location": "10 Year Old Owner Built Neat And Clean Specious Decent Planning Bungalow For Sale Dha Phase 6 Near Masjid E Ali", "area_sq": "1000", "price": "250000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/205503115-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0605556, 24.795]}}, {"type": "Feature", "properties": {"location": "Apartment For Sale In Gulistan-e-jauhor Block-16 Main Road Facing Project", "area_sq": "111", "price": "8200000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213460996-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1186958, 24.91796]}}, {"type": "Feature", "properties": {"location": "400 yards best, affordable and luxurious bungalow available for sell in Gulshan e Iqbal Block 6.", "area_sq": "400", "price": "79000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/206709345-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.095111, 24.926667]}}, {"type": "Feature", "properties": {"location": "4 BED DD Bismillah Tower Flat for Sale", "area_sq": "300", "price": "18500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213125547-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1453114, 24.9228578]}}, {"type": "Feature", "properties": {"location": "2700 Square Feet Flat In Emaar Pearl Towers Is Best Option", "area_sq": "300", "price": "93000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213326269-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0714284, 24.7491621]}}, {"type": "Feature", "properties": {"location": "Buying A Flat In Gulistan-e-Jauhar - Block 15?", "area_sq": "150", "price": "9800000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213400261-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.12217, 24.9185386]}}, {"type": "Feature", "properties": {"location": "Safari Omega View Flat For Sale", "area_sq": "72", "price": "7000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/213432297-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1319183, 24.9095507]}}, {"type": "Feature", "properties": {"location": "Upper Floor 4 Bedrooms West Open Apartment For Sale", "area_sq": "417", "price": "82500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/214183696-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [-122.4250213, 45.5069202]}}, {"type": "Feature", "properties": {"location": "2 Bed Apartment For Sale In Abdullah Terrace Jauhar Gulistan-e-jauhar Block 16", "area_sq": "111", "price": "8800000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/214677333-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1159138, 24.9215163]}}, {"type": "Feature", "properties": {"location": "Precinct 35 Sportscity villas available for sale in bahria town karachi low rate good location", "area_sq": "350", "price": "21200000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/214757261-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3034311, 25.0214515]}}, {"type": "Feature", "properties": {"location": "Park facing 300 yards Ground Portion For Sale in Gulistan e Johar Blk14", "area_sq": "300", "price": "19500000", "purpose": "For Sale", "property_type": "Lower Portion", "image_src": "https://media.zameen.com/thumbnails/214996926-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1248082, 24.9194174]}}, {"type": "Feature", "properties": {"location": "2 Bed DD Apartment for sale in Saima Jinnah Avenue", "area_sq": "144", "price": "21500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/215076139-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1822731, 24.9045876]}}, {"type": "Feature", "properties": {"location": "3 Bed DD Apartment for sale in Saima Jinnah Avenue", "area_sq": "244", "price": "32000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/215076436-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1822731, 24.9045876]}}, {"type": "Feature", "properties": {"location": "240 Sq: Yards House For Sale In Gulistan-e-johar Block 2", "area_sq": "240", "price": "54000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/215197318-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1306117, 24.929683]}}, {"type": "Feature", "properties": {"location": "2 Bed Dd Flat For Sale In Abdullah Terrace Gulistan E Johar Block 16", "area_sq": "111", "price": "8500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/215211903-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1159138, 24.9215163]}}, {"type": "Feature", "properties": {"location": "The Most Latest Design, Hybrid Frame Structure, Never Before, Beautiful House In Falcon Malir", "area_sq": "500", "price": "117500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/215796812-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.21626189999999, 24.8937334]}}, {"type": "Feature", "properties": {"location": "152 Square Yards House For sale In Beautiful Bahria Homes - Iqbal Villas", "area_sq": "152", "price": "19000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216066666-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [74.182345, 31.3552101]}}, {"type": "Feature", "properties": {"location": "Bahria Town - Ali Block House Sized 125 Square Yards Is Available", "area_sq": "125", "price": "15000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216067830-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3238402, 25.0630723]}}, {"type": "Feature", "properties": {"location": "Ready To Buy A House In Bahria Town - Ali Block Karachi", "area_sq": "125", "price": "15000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216067849-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3238402, 25.0630723]}}, {"type": "Feature", "properties": {"location": "Good 350 Square Yards House For sale In Bahria Town - Precinct 35", "area_sq": "350", "price": "21000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216069005-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3034311, 25.0214515]}}, {"type": "Feature", "properties": {"location": "400 Square Yard Brand New Portion For Sale In Gulistan-e-jauhor Block-3", "area_sq": "400", "price": "32500000", "purpose": "For Sale", "property_type": "Upper Portion", "image_src": "https://media.zameen.com/thumbnails/216470514-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1321012, 24.9257223]}}, {"type": "Feature", "properties": {"location": "1300 Square Feet Flat Is Available For sale In Gulistan-e-Jauhar - Block 15", "area_sq": "144", "price": "11000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.12241949999999, 24.9192606]}}, {"type": "Feature", "properties": {"location": "Looking For A Flat In Gulistan-e-Jauhar - Block 15", "area_sq": "144", "price": "11000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.12217, 24.9185386]}}, {"type": "Feature", "properties": {"location": "Ideally Located Flat Of 950 Square Feet Is Available For sale In Karachi", "area_sq": "106", "price": "7000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "700 Square Feet Flat In Gulistan-e-Jauhar - Block 18 Is Best Option", "area_sq": "78", "price": "4000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.12763269999999, 24.9081987]}}, {"type": "Feature", "properties": {"location": "Looking For A Flat In Gulistan-e-Jauhar - Block 18", "area_sq": "78", "price": "4000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.12763269999999, 24.9081987]}}, {"type": "Feature", "properties": {"location": "Flat Of 750 Square Feet In Gulistan-e-Jauhar - Block 18 Is Available", "area_sq": "83", "price": "5500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.12763269999999, 24.9081987]}}, {"type": "Feature", "properties": {"location": "A Upper Portion Of 160 Square Yards In Gulistan-e-Jauhar - Block 12", "area_sq": "160", "price": "13500000", "purpose": "For Sale", "property_type": "Upper Portion", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.12892719999999, 24.9304496]}}, {"type": "Feature", "properties": {"location": "Gorgeous Prime Location 10 Marla Flat For sale Available In Askari 5 - Sector J", "area_sq": "250", "price": "45000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.200441, 24.9612938]}}, {"type": "Feature", "properties": {"location": "2400 Square Feet Flat For sale In Bath Island Bath Island", "area_sq": "267", "price": "82500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216617957-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.033333, 24.833333]}}, {"type": "Feature", "properties": {"location": "Ready To Buy A Flat 2400 Square Feet In Bath Island", "area_sq": "267", "price": "85000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216617971-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.033333, 24.833333]}}, {"type": "Feature", "properties": {"location": "Flat Sized 2400 Square Feet Is Available For sale In Bath Island", "area_sq": "267", "price": "82500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216617976-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.033333, 24.833333]}}, {"type": "Feature", "properties": {"location": "Buy A Centrally Located 2000 Square Feet Flat In Bath Island", "area_sq": "222", "price": "67500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618049-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.033333, 24.833333]}}, {"type": "Feature", "properties": {"location": "Ideal Flat Is Available For sale In Bath Island", "area_sq": "333", "price": "65000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618073-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.033333, 24.833333]}}, {"type": "Feature", "properties": {"location": "2600 Square Feet Flat For sale In Bath Island Bath Island In Only Rs. 65,000,000", "area_sq": "289", "price": "65000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.033333, 24.833333]}}, {"type": "Feature", "properties": {"location": "Ideally Located House For sale In DHA Phase 2 Available", "area_sq": "1000", "price": "165000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216618596-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [73.1644628, 33.5368355]}}, {"type": "Feature", "properties": {"location": "Get Your Hands On House In Karachi Best Area", "area_sq": "1000", "price": "165000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216618604-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "1000 Square Yards House available for sale in DHA Phase 2 if you hurry", "area_sq": "1000", "price": "165000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216618612-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [73.1644628, 33.5368355]}}, {"type": "Feature", "properties": {"location": "You Can Find A Gorgeous House For sale In DHA Phase 2", "area_sq": "1000", "price": "165000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216618621-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [73.1644628, 33.5368355]}}, {"type": "Feature", "properties": {"location": "1000 Square Yards House For sale Is Available In DHA Phase 2", "area_sq": "1000", "price": "165000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216618646-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [73.1644628, 33.5368355]}}, {"type": "Feature", "properties": {"location": "Book House Today In DHA Phase 2", "area_sq": "1000", "price": "165000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216618656-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [73.1644628, 33.5368355]}}, {"type": "Feature", "properties": {"location": "Good 1000 Square Yards House For sale In DHA Phase 2", "area_sq": "1000", "price": "165000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216618663-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [73.1644628, 33.5368355]}}, {"type": "Feature", "properties": {"location": "Flat For sale Situated In University Road", "area_sq": "87", "price": "9000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618706-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1145359, 24.9290421]}}, {"type": "Feature", "properties": {"location": "Flat Is Available For sale In University Road", "area_sq": "87", "price": "9000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618722-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1145359, 24.9290421]}}, {"type": "Feature", "properties": {"location": "Affordable Flat For sale In University Road", "area_sq": "87", "price": "9000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618739-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1145359, 24.9290421]}}, {"type": "Feature", "properties": {"location": "Ideally Located Flat Of 1287 Square Feet Is Available For sale In University Road", "area_sq": "143", "price": "14900000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618766-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1145359, 24.9290421]}}, {"type": "Feature", "properties": {"location": "A Perfect Flat Awaits You In University Road University Road", "area_sq": "143", "price": "14900000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618782-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1145359, 24.9290421]}}, {"type": "Feature", "properties": {"location": "A Stunning Flat Is Up For Grabs In University Road University Road", "area_sq": "143", "price": "14900000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618789-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1145359, 24.9290421]}}, {"type": "Feature", "properties": {"location": "1287 Square Feet Flat In University Road For sale At Good Location", "area_sq": "143", "price": "14900000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618805-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1145359, 24.9290421]}}, {"type": "Feature", "properties": {"location": "Flat Is Available For sale In University Road", "area_sq": "143", "price": "14900000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216618820-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1145359, 24.9290421]}}, {"type": "Feature", "properties": {"location": "sale A Flat In Karachi Prime Location", "area_sq": "106", "price": "7500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216622538-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Get In Touch Now To Buy A 950 Square Feet Flat In Karachi", "area_sq": "106", "price": "8500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216622548-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Buying A House In Karachi?", "area_sq": "200", "price": "18500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216622884-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "A Palatial Residence For sale In Bahria Town - Precinct 11-A Karachi", "area_sq": "200", "price": "18500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216622894-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3149567, 25.062457]}}, {"type": "Feature", "properties": {"location": "235 Square Yards House For sale In Bahria Town - Precinct 27 Karachi", "area_sq": "235", "price": "17000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623007-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3474741, 25.0695676]}}, {"type": "Feature", "properties": {"location": "House For Grabs In 235 Square Yards Karachi", "area_sq": "235", "price": "15500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623017-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "A Stunning House Is Up For Grabs In Bahria Homes - Iqbal Villas Karachi", "area_sq": "152", "price": "21500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623027-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3067937, 25.0090523]}}, {"type": "Feature", "properties": {"location": "This Is Your Chance To Buy House In Karachi", "area_sq": "152", "price": "18000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623039-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Ready To Buy A House 350 Square Yards In Bahria Sports City", "area_sq": "350", "price": "22000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623059-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3633753, 25.1357925]}}, {"type": "Feature", "properties": {"location": "sale A House In Karachi Prime Location", "area_sq": "500", "price": "48000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623069-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "235 Square Yards House For sale In Karachi", "area_sq": "235", "price": "16000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623118-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Bahria Homes - Iqbal Villas House Sized 152 Square Yards For sale", "area_sq": "152", "price": "21000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623128-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [74.182345, 31.3552101]}}, {"type": "Feature", "properties": {"location": "Ideally Located House For sale In Bahria Homes - Iqbal Villas Available", "area_sq": "152", "price": "21500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216623228-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [74.182345, 31.3552101]}}, {"type": "Feature", "properties": {"location": "We Are Offering Ready To Move Luxury 3 Bedrooms Precinct 11A Villa Is Available For Sale In Bahria Town Karachi", "area_sq": "152", "price": "17000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216627430-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3149567, 25.062457]}}, {"type": "Feature", "properties": {"location": "120 Ground Plus One Bungalow Available for Sale in Capital Society", "area_sq": "120", "price": "25500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216627633-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1589127, 24.9594499]}}, {"type": "Feature", "properties": {"location": "We Are Offering Ready To Move Luxury 3 Bedrooms Iqbal Villa Is Available For Sale In Bahria Town Karachi", "area_sq": "152", "price": "19000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216627780-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3067937, 25.0090523]}}, {"type": "Feature", "properties": {"location": "240 SQYD Brand New Ground Plus One Bungalow Available for Sale in Capital Society", "area_sq": "240", "price": "47000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.1589127, 24.9594499]}}, {"type": "Feature", "properties": {"location": "Double Storey 200 Square Yards House For sale In North Nazimabad - Block I Karachi", "area_sq": "200", "price": "36000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216744897-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0449697, 24.9487408]}}, {"type": "Feature", "properties": {"location": "Tripple Storey 120 Square Yards House For sale In Shadman Town - Sector-14/B Karachi", "area_sq": "120", "price": "24000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0598634, 24.9623497]}}, {"type": "Feature", "properties": {"location": "Single Storey 240 Square Yards House For sale In Shadman Town - Sector-14/B Karachi", "area_sq": "240", "price": "35000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0598634, 24.9623497]}}, {"type": "Feature", "properties": {"location": "Prime Location Flat For sale In North Nazimabad - Block M Karachi", "area_sq": "161", "price": "14000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216744898-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.05308699999999, 24.9476695]}}, {"type": "Feature", "properties": {"location": "In Karachi You Can Find The Perfect Prime Location Flat For sale", "area_sq": "133", "price": "8000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216744907-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Prime Location 950 Square Feet Flat In North Nazimabad - Block L", "area_sq": "106", "price": "8000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216744893-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0539059, 24.9417902]}}, {"type": "Feature", "properties": {"location": "Ideal Prime Location 950 Square Feet Flat Available In North Nazimabad - Block K, Karachi", "area_sq": "106", "price": "6500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.05018249999999, 24.9488853]}}, {"type": "Feature", "properties": {"location": "Stunning and affordable Prime Location House available for sale in North Nazimabad - Block J", "area_sq": "200", "price": "50000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0509272, 24.9553041]}}, {"type": "Feature", "properties": {"location": "Prime Location House Available For sale In North Nazimabad - Block L", "area_sq": "200", "price": "50000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216744905-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0539059, 24.9417902]}}, {"type": "Feature", "properties": {"location": "Get An Attractive Prime Location House In Karachi Under Rs. 55,000,000", "area_sq": "400", "price": "55000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Prime Location 600 Square Yards House For sale In North Nazimabad", "area_sq": "600", "price": "65000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.042281, 24.9372146]}}, {"type": "Feature", "properties": {"location": "Prime Location North Nazimabad - Block D House Sized 200 Square Yards For sale", "area_sq": "200", "price": "40000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.041991, 24.9426601]}}, {"type": "Feature", "properties": {"location": "Prime Location A Centrally Located House Is Available For sale In Karachi", "area_sq": "233", "price": "57500000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Prime Location 600 Square Yards House In North Nazimabad - Block I Is Available", "area_sq": "600", "price": "90000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0449697, 24.9487408]}}, {"type": "Feature", "properties": {"location": "Looking For A Prime Location Flat In North Nazimabad - Block M", "area_sq": "111", "price": "11000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216744894-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.05308699999999, 24.9476695]}}, {"type": "Feature", "properties": {"location": "Prime Location 1500 Square Feet Flat available for sale in North Nazimabad - Block H, Karachi", "area_sq": "167", "price": "18000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0479484, 24.9380265]}}, {"type": "Feature", "properties": {"location": "Buying A Prime Location Flat In North Nazimabad - Block H?", "area_sq": "156", "price": "17500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0479484, 24.9380265]}}, {"type": "Feature", "properties": {"location": "Prime Location 240 Square Yards House For sale In Naya Nazimabad - Block C Karachi", "area_sq": "240", "price": "46000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.044225, 24.9577172]}}, {"type": "Feature", "properties": {"location": "110 Square Yards Upper Portion In Central North Nazimabad - Block I For sale", "area_sq": "110", "price": "10000000", "purpose": "For Sale", "property_type": "Upper Portion", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0449697, 24.9487408]}}, {"type": "Feature", "properties": {"location": "150 Square Yards Upper Portion For sale In North Nazimabad - Block I Karachi In Only Rs. 14,000,000", "area_sq": "150", "price": "14000000", "purpose": "For Sale", "property_type": "Upper Portion", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0449697, 24.9487408]}}, {"type": "Feature", "properties": {"location": "Get Your Hands On House In Karachi Best Area", "area_sq": "200", "price": "40000000", "purpose": "For Sale", "property_type": "House", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.0011364, 24.8607343]}}, {"type": "Feature", "properties": {"location": "Phase 6 1000 yards Owner Built Excellent Bungalow For Sale Dha karachi", "area_sq": "1000", "price": "205000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216732072-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0576612, 24.8043485]}}, {"type": "Feature", "properties": {"location": "Flat for Sale in Noman Residencia , Scheme 33.", "area_sq": "122", "price": "8000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216733410-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.14726449999999, 24.9569291]}}, {"type": "Feature", "properties": {"location": "500 Yards Full Basement Bungalow For Sale in Phase 6", "area_sq": "500", "price": "155000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216733902-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [76.71207059999999, 30.7355465]}}, {"type": "Feature", "properties": {"location": "500 Yards Well Maintained Bungalow For Sale in Phase 6", "area_sq": "500", "price": "105000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216734128-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [76.71207059999999, 30.7355465]}}, {"type": "Feature", "properties": {"location": "Brand New Ground plus 1 House Available for sale in north karachi sector 11C/2", "area_sq": "170", "price": "27500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216734148-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0599916, 24.9714667]}}, {"type": "Feature", "properties": {"location": "300 Yards Duplex For Sale in Phase 6 DHA", "area_sq": "300", "price": "75000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216734890-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [74.4505286, 31.4571606]}}, {"type": "Feature", "properties": {"location": "Saima Bridge View", "area_sq": "222", "price": "17200000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216735289-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0329619, 24.9241404]}}, {"type": "Feature", "properties": {"location": "Luxury Flat for Sale at Sohni Golf View Apartments", "area_sq": "172", "price": "19900000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216735361-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1786442, 24.9207358]}}, {"type": "Feature", "properties": {"location": "We Are Offering Ready To Move Luxury 4 Bedrooms Bahria Sports City Villa Is Available For Sale In Bahria Town Karachi", "area_sq": "350", "price": "21500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216735518-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3544632, 25.1193135]}}, {"type": "Feature", "properties": {"location": "We Are Offering 950 Square Ft 2 Bedrooms Luxury Apartment Is Available For Sale In Bahria Town, Karachi", "area_sq": "106", "price": "8500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216735861-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3034311, 25.0214515]}}, {"type": "Feature", "properties": {"location": "We Are Offering 2250 Square ft 3 Bedrooms Luxury Apartment In Bahria Town, Karachi", "area_sq": "250", "price": "19500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216736005-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3034311, 25.0214515]}}, {"type": "Feature", "properties": {"location": "1650 sq ft 4 bed dd flat for sale amil colony jamshed road near islamia collage", "area_sq": "183", "price": "36500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216736125-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.04627289999999, 24.879842]}}, {"type": "Feature", "properties": {"location": "Ready To Move Luxury 3 Bedrooms Precinct 27 Villa Is Available For Sale In Bahria Town Karachi", "area_sq": "235", "price": "17000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216736427-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3474741, 25.0695676]}}, {"type": "Feature", "properties": {"location": "Ready To Move Luxury 3 Bedrooms Precinct 31 Villa Is Available For Sale In Bahria Town Karachi", "area_sq": "235", "price": "15600000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216736500-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.35318749999999, 25.1140625]}}, {"type": "Feature", "properties": {"location": "We Have Ready To Move Luxury 3 Bedrooms Precinct 11B Villa Is Available For Sale In Bahria Town Karachi", "area_sq": "125", "price": "15000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216737017-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.31218199999999, 25.0650251]}}, {"type": "Feature", "properties": {"location": "We Have 125 Sq. Yards 3 Bedrooms Modern Style Luxurious Ali Block Villa For Sale Is Available In Bahria Town Karachi", "area_sq": "125", "price": "15000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216737073-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3034311, 25.0214515]}}, {"type": "Feature", "properties": {"location": "2600sqft 3 bed dd askari 5 sector block J for sale", "area_sq": "289", "price": "41000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216737151-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.18200089999999, 24.9400595]}}, {"type": "Feature", "properties": {"location": "1500 Square Feet Flat For Sale In Gulistan-e-jauhor Block-16", "area_sq": "167", "price": "13000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216742259-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1186958, 24.91796]}}, {"type": "Feature", "properties": {"location": "03 Bed DD Flat with Pent House for Sale in Saima Jinnah Avenue", "area_sq": "244", "price": "45000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "nan"}, "geometry": {"type": "Point", "coordinates": [67.1822731, 24.9045876]}}, {"type": "Feature", "properties": {"location": "4 Bed DD Afnan Duplex with Roof For Sale in Gulistan-e-Jauhar Block 3A", "area_sq": "244", "price": "19900000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216751727-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.13734389999999, 24.9233908]}}, {"type": "Feature", "properties": {"location": "400 Yards 6 bed DD Banglow For Sale in Jauhar VIP Block 14", "area_sq": "400", "price": "58500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216752037-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.1343848, 24.9204194]}}, {"type": "Feature", "properties": {"location": "200 Square Yards House available for sale in Bahria Town - Quaid Villas, Karachi", "area_sq": "200", "price": "22000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216752146-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3034311, 25.0214515]}}, {"type": "Feature", "properties": {"location": "200 Square Yards Spacious House Available In Bahria Town - Precinct 10-A For sale", "area_sq": "200", "price": "17000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216752152-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3034311, 25.0214515]}}, {"type": "Feature", "properties": {"location": "Get In Touch Now To Buy A House In Bahria Town - Precinct 27", "area_sq": "235", "price": "16000000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216752164-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.3034311, 25.0214515]}}, {"type": "Feature", "properties": {"location": "235 Square Yards House Available For sale In Bahria Town - Precinct 31", "area_sq": "235", "price": "13500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216752170-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.35318749999999, 25.1140625]}}, {"type": "Feature", "properties": {"location": "100YARD BRANDNEW MOST GORGEOUS AND ARCHITECTURE ULTRA MODERN STYLE DOUBLE STORY BUNGALOW FOR SELL IN DHA PHASE 7 EXT WITH FULL BASEMENT. MOST ELITE CLASS LOCATION IN DHA KARACHI. .", "area_sq": "100", "price": "43500000", "purpose": "For Sale", "property_type": "House", "image_src": "https://media.zameen.com/thumbnails/216752234-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0643315, 24.7936797]}}, {"type": "Feature", "properties": {"location": "North town residency phase 1 2bed lounge", "area_sq": "70", "price": "3500000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216752295-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [67.0451966, 25.0118898]}}, {"type": "Feature", "properties": {"location": "Crown heights mazinine floor", "area_sq": "78", "price": "5000000", "purpose": "For Sale", "property_type": "Flat", "image_src": "https://media.zameen.com/thumbnails/216752370-800x600.jpeg"}, "geometry": {"type": "Point", "coordinates": [-73.9422324, 40.6694022]}}]};
+map.data.addGeoJson(data);
+map.data.addListener('click', function(event) {
+    var image_src = event.feature.getProperty('image_src');
+    var location = event.feature.getProperty('location');
+    var price = event.feature.getProperty('price');
+    var area_sq = event.feature.getProperty('area_sq');
+    var purpose = event.feature.getProperty('purpose');
+    var property_type = event.feature.getProperty('property_type');
+    infowindow.setContent('<div><img src=" ' + image_src +' " width="100" height="200"> <br><br><strong>LOCATION: </strong>' + location +
+    '<br><strong> AREA: </strong>' + area_sq +
+    '<br><strong>PRICE: </strong>' + price +
+    '<br><strong>PURPOSE: </strong>' + purpose +
+    '<br><strong>PROPERTY TYPE: </strong>' + property_type +
+    '<br><br><strong><em><button type="button">View Property Details</button></em></strong></div>');
+    infowindow.setPosition(event.feature.getGeometry().get());
+    infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
+    infowindow.open(map);
+});
+
+
+</script>
+
+        <!-- </section> -->
+
+        
+      </section>
+    </main>
+<!--    <section class="recommended-products">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-12">-->
+<!--            <h2>Recommended Products</h2>-->
+<!--            <div class="owl-carousel owl-theme">-->
+<!--              <div class="item">                  -->
+<!--                <div class="thumb-wrapper">-->
+<!--                  <div class="img-box">-->
+<!--                    <img src="img/home-1.png" class="img-fluid" alt="">-->
+<!--                  </div>-->
+<!--                  <div class="thumb-content">-->
+<!--                    <h4>Double Story House for Sale</h4>-->
+<!--                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="item">                  -->
+<!--                <div class="thumb-wrapper">-->
+<!--                  <div class="img-box">-->
+<!--                    <img src="img/home-1.png" class="img-fluid" alt="">-->
+<!--                  </div>-->
+<!--                  <div class="thumb-content">-->
+<!--                    <h4>Double Story House for Sale</h4>-->
+<!--                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="item">                  -->
+<!--                <div class="thumb-wrapper">-->
+<!--                  <div class="img-box">-->
+<!--                    <img src="img/home-1.png" class="img-fluid" alt="">-->
+<!--                  </div>-->
+<!--                  <div class="thumb-content">-->
+<!--                    <h4>Double Story House for Sale</h4>-->
+<!--                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="item">                  -->
+<!--                <div class="thumb-wrapper">-->
+<!--                  <div class="img-box">-->
+<!--                    <img src="img/home-1.png" class="img-fluid" alt="">-->
+<!--                  </div>-->
+<!--                  <div class="thumb-content">-->
+<!--                    <h4>Double Story House for Sale</h4>-->
+<!--                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="item">                  -->
+<!--                <div class="thumb-wrapper">-->
+<!--                  <div class="img-box">-->
+<!--                    <img src="img/home-1.png" class="img-fluid" alt="">-->
+<!--                  </div>-->
+<!--                  <div class="thumb-content">-->
+<!--                    <h4>Double Story House for Sale</h4>-->
+<!--                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="item">                  -->
+<!--                <div class="thumb-wrapper">-->
+<!--                  <div class="img-box">-->
+<!--                    <img src="img/home-1.png" class="img-fluid" alt="">-->
+<!--                  </div>-->
+<!--                  <div class="thumb-content">-->
+<!--                    <h4>Double Story House for Sale</h4>-->
+<!--                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="item">                  -->
+<!--                <div class="thumb-wrapper">-->
+<!--                  <div class="img-box">-->
+<!--                    <img src="img/home-1.png" class="img-fluid" alt="">-->
+<!--                  </div>-->
+<!--                  <div class="thumb-content">-->
+<!--                    <h4>Double Story House for Sale</h4>-->
+<!--                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="item">                  -->
+<!--                <div class="thumb-wrapper">-->
+<!--                  <div class="img-box">-->
+<!--                    <img src="img/home-1.png" class="img-fluid" alt="">-->
+<!--                  </div>-->
+<!--                  <div class="thumb-content">-->
+<!--                    <h4>Double Story House for Sale</h4>-->
+<!--                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i>Gulistan e Johar Block 18, Karachi.</p>-->
+<!--                    <a href="#" class="btn btn-primary">Price PKR 8.4 Crore</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>               -->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+    <br><br>
+    <div class="app-banner">
+      <div class="container">
+        <div class="box">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mini-box">
+                <!-- <div class="mini-box"> -->
+                <h4>Get the <strong>Property Guru</strong>  app</h4>
+                <!-- </div> -->
+                <h4>Download our app to get quick solutions to property-related problems.</h4>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="phone-app">
+                <img src="{% static 'img/my-app.png'%}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-3 mt-2">
+              <div class="scan">
+                <div class="playstore">
+                  <img src="{% static 'img/play-store.png'%}" alt="">
+                </div>
+                <h4>Scan the QR Code</h4>
+                <div class="qr-img">
+                  <img src="{% static 'img/qr_default.png'%}" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- <div class="col-1"></div> -->
+          <div class="col-md-3">
+            <div class="footer-nav">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">Homes</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="contact-us">
+              <h4>Our Address</h4>
+              <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                  R-245, KN-Gohar Green City, Karachi Pakistan.
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>(+92) 314 2309877</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>propertyguru@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="social-icons">
+              <h4>Get Connected</h4>
+              <div class="icons">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook"></i>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-1"></div> -->
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    responsiveClass:true,
+    responsive:{
+    0:{
+    items:1,
+    nav:true
+    },
+    600:{
+    items:3,
+    nav:true
+    },
+    1000:{
+    items:4,
+    nav:true,
+    loop:true
+    }
+    }
+    })
+    </script>
+
+    
+    <!-- Scripts -->
+    <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js'%}"></script>
+    <script src="{% static 'assets/js/animation.js'%}"></script>
+    <script src="{% static 'assets/js/imagesloaded.js'%}"></script>
+    <script src="{% static 'assets/js/custom.js'%}"></script>
+</body>
+</html>
